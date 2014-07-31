@@ -99,9 +99,10 @@
   background: #242424;
 }
 
-.cd > .cd-home, .cd > .cd-ear, .cd > .cd-cam, .cd .screen{
+.cd > .cd-home, .cd > .cd-ear, .cd > .cd-cam, .cd .cd-screen{
   position: absolute;
   left: 50%;
+  overflow: hidden;
 }
 
 .cd > .cd-cam{
@@ -128,7 +129,7 @@
   margin-left: -25px;
 }
 
-.cd > .screen{
+.cd > .cd-screen{
   background: black;
   width: 250px;
   margin-left: -125px;
@@ -165,7 +166,7 @@
   margin-left: calc(-25px * 1.3);
 }
 
-.cd-lg > .screen{
+.cd-lg > .cd-screen{
   width: calc(250px * 1.3);
   margin-left: calc(-125px * 1.3);
   height: calc(440px * 1.3);
@@ -201,7 +202,7 @@
   margin-left: calc(-25px * .7);
 }
 
-.cd-sm > .screen{
+.cd-sm > .cd-screen{
   width: calc(250px * .7);
   margin-left: calc(-125px * .7);
   height: calc(440px * .7);
@@ -237,7 +238,7 @@
   margin-left: calc(-25px * .5);
 }
 
-.cd-xs > .screen{
+.cd-xs > .cd-screen{
   width: calc(250px * .5);
   margin-left: calc(-125px * .5);
   height: calc(440px * .5);
