@@ -1,6 +1,6 @@
 CSSDevices
 ==========
 
-CSS library of flat iPhones
+CSS library for flat iPhones
 
-Install & usage instructions here: http://yamartino.github.io/CSSDevices
+Examples, installation, and usage instructions here: http://yamartino.github.io/CSSDevices
