@@ -9,23 +9,6 @@
   display: block;
 }
 
-/*---------  Helpers --------*/
-
-.cd-center{
-  margin: auto;
-}
-
-.cd-image{
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 100%;
-}
-
 /*---------  iPhone 5s --------*/
 
 .cd-5s-gold{
@@ -492,4 +475,22 @@
   border-bottom-left-radius: calc(20px * .5);
   border-bottom-right-radius: calc(20px * .5);
   border-top: calc(2px * .5) solid #BDBDBD;
+}
+
+/*------------------------------------  Helpers ------------------------------------*/
+
+.cd-center{
+  position: relative;
+  margin: auto;
+}
+
+.cd-fill-screen{
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
 }
