@@ -64,17 +64,6 @@
   border-top: 2px solid #BDBDBD;
 }
 
-.cd-laptop .cd-image{
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 100%;
-}
-
 .cd-laptop.cd-lg{
   width:calc(922px * 1.3);
   height:calc(520px * 1.3);
