@@ -1,7 +1,7 @@
 .cd-browser{
   position: relative;
-  width:922px;
-  height:520px;
+  width:700px;
+  height:400px;
 }
 
 .cd-browser > .cd-nav{
@@ -10,7 +10,7 @@
   left: 0px;
   right: 0px;
   height: 30px;
-  background: red;
+  background: #e8e8e8;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -27,6 +27,15 @@
 
 .cd-browser .cd-red{
   margin-left: 13px;
+  background: #de6f64;
+}
+
+.cd-browser .cd-yellow{
+  background: #e6bb48;
+}
+
+.cd-browser .cd-green{
+  background: #5acb8a
 }
 
 .cd-browser .cd-url{
@@ -37,7 +46,8 @@
   bottom: 4px;
   border-radius: 5px;
   padding: 2px;
-  background: green;
+  background: white;
+  color: #B6B5B5;
 }
 
 .cd-browser .cd-page{
@@ -48,5 +58,6 @@
   bottom: 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: yellow;
+  background: white;
+  border: 1px solid #e8e8e8;
 }
