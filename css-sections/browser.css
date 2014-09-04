@@ -4,203 +4,49 @@
   height:520px;
 }
 
-.cd-laptop > .cd-top{
+.cd-browser > .cd-nav{
   position: absolute;
-  width:744px;
-  height:500px;
-  left: 50%;
-  margin-left: -372px;
-  background: #d6d5da;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 30px;
+  background: red;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.cd-laptop > .cd-bottom{
-  position: absolute;
-  width:922px;
-  height:20px;
-  background: #BDBDBD;
-  bottom: 0px;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-}
-
-.cd-laptop > .cd-screen{
-  position: absolute;
-  width:684px;
-  height:440px;
-  left: 50%;
-  margin-left: -342px;
-  top: 30px;
-  background: black;
-  border-radius: 5px;
-  overflow: hidden;
-  border: 1px solid #6E6E6E;
-}
-
-.cd-laptop > .cd-cam{
-  position: absolute;
-  width:8px;
-  height:8px;
-  left: 50%;
-  margin-left: -4px;
-  top: 12px;
-  background: black;
+.cd-browser .cd-red, .cd-browser .cd-yellow, .cd-browser .cd-green{
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 9px 0px 9px 6px;
   border-radius: 50%;
+  background: blue;
+  float: left;
 }
 
-.cd-laptop > .cd-notch{
+.cd-browser .cd-red{
+  margin-left: 13px;
+}
+
+.cd-browser .cd-url{
   position: absolute;
-  width:150px;
-  height:8px;
-  left: 50%;
-  bottom: 10px;
-  margin-left: -75px;
-  background: #d6d5da;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top: 2px solid #BDBDBD;
+  top: 4px;
+  left: 80px;
+  right: 4px;
+  bottom: 4px;
+  border-radius: 5px;
+  padding: 2px;
+  background: green;
 }
 
-.cd-laptop.cd-lg{
-  width:calc(922px * 1.3);
-  height:calc(520px * 1.3);
-}
-
-.cd-laptop.cd-lg > .cd-top{
-  width:calc(744px * 1.3);
-  height:calc(500px * 1.3);
-  margin-left: calc(-372px * 1.3);
-  border-top-left-radius: calc(20px * 1.3);
-  border-top-right-radius: calc(20px * 1.3);
-  border-bottom-left-radius: calc(7px * 1.3);
-  border-bottom-right-radius: calc(7px * 1.3);
-}
-
-.cd-laptop.cd-lg > .cd-bottom{
-  width:calc(922px * 1.3);
-  height:calc(20px * 1.3);
-  border-bottom-left-radius:calc(100px * 1.3);
-  border-bottom-right-radius:calc(100px * 1.3);
-}
-
-.cd-laptop.cd-lg > .cd-screen{
-  width:calc(684px * 1.3);
-  height:calc(440px * 1.3);
-  margin-left: calc(-342px * 1.3);
-  top: calc(30px * 1.3);
-  border-radius: calc(5px * 1.3);
-}
-
-.cd-laptop.cd-lg > .cd-cam{
-  width:calc(8px * 1.3);
-  height:calc(8px * 1.3);
-  margin-left: calc(-4px * 1.3);
-  top: calc(12px * 1.3);
-}
-
-.cd-laptop.cd-lg > .cd-notch{
-  width:calc(150px * 1.3);
-  height:calc(8px * 1.3);
-  bottom: calc(10px * 1.3);
-  margin-left: calc(-75px * 1.3);
-  border-bottom-left-radius: calc(20px * 1.3);
-  border-bottom-right-radius: calc(20px * 1.3);
-  border-top: calc(2px * 1.3) solid #BDBDBD;
-}
-
-.cd-laptop.cd-sm{
-  width:calc(922px * .7);
-  height:calc(520px * .7);
-}
-
-.cd-laptop.cd-sm > .cd-top{
-  width:calc(744px * .7);
-  height:calc(500px * .7);
-  margin-left: calc(-372px * .7);
-  border-top-left-radius: calc(20px * .7);
-  border-top-right-radius: calc(20px * .7);
-  border-bottom-left-radius: calc(7px * .7);
-  border-bottom-right-radius: calc(7px * .7);
-}
-
-.cd-laptop.cd-sm > .cd-bottom{
-  width:calc(922px * .7);
-  height:calc(20px * .7);
-  border-bottom-left-radius:calc(100px * .7);
-  border-bottom-right-radius:calc(100px * .7);
-}
-
-.cd-laptop.cd-sm > .cd-screen{
-  width:calc(684px * .7);
-  height:calc(440px * .7);
-  margin-left: calc(-342px * .7);
-  top: calc(30px * .7);
-  border-radius: calc(5px * .7);
-}
-
-.cd-laptop.cd-sm > .cd-cam{
-  width:calc(8px * .7);
-  height:calc(8px * .7);
-  margin-left: calc(-4px * .7);
-  top: calc(12px * .7);
-}
-
-.cd-laptop.cd-sm > .cd-notch{
-  width:calc(150px * .7);
-  height:calc(8px * .7);
-  bottom: calc(10px * .7);
-  margin-left: calc(-75px * .7);
-  border-bottom-left-radius: calc(20px * .7);
-  border-bottom-right-radius: calc(20px * .7);
-  border-top: calc(2px * .7) solid #BDBDBD;
-}
-
-.cd-laptop.cd-xs{
-  width:calc(922px * .5);
-  height:calc(520px * .5);
-}
-
-.cd-laptop.cd-xs > .cd-top{
-  width:calc(744px * .5);
-  height:calc(500px * .5);
-  margin-left: calc(-372px * .5);
-  border-top-left-radius: calc(20px * .5);
-  border-top-right-radius: calc(20px * .5);
-  border-bottom-left-radius: calc(7px * .5);
-  border-bottom-right-radius: calc(7px * .5);
-}
-
-.cd-laptop.cd-xs > .cd-bottom{
-  width:calc(922px * .5);
-  height:calc(20px * .5);
-  border-bottom-left-radius:calc(100px * .5);
-  border-bottom-right-radius:calc(100px * .5);
-}
-
-.cd-laptop.cd-xs > .cd-screen{
-  width:calc(684px * .5);
-  height:calc(440px * .5);
-  margin-left: calc(-342px * .5);
-  top: calc(30px * .5);
-  border-radius: calc(5px * .5);
-}
-
-.cd-laptop.cd-xs > .cd-cam{
-  width:calc(8px * .5);
-  height:calc(8px * .5);
-  margin-left: calc(-4px * .5);
-  top: calc(12px * .5);
-}
-
-.cd-laptop.cd-xs > .cd-notch{
-  width:calc(150px * .5);
-  height:calc(8px * .5);
-  bottom: calc(10px * .5);
-  margin-left: calc(-75px * .5);
-  border-bottom-left-radius: calc(20px * .5);
-  border-bottom-right-radius: calc(20px * .5);
-  border-top: calc(2px * .5) solid #BDBDBD;
+.cd-browser .cd-page{
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: yellow;
 }
