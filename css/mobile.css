@@ -103,7 +103,7 @@
 .cd-mobile > .cd-screen {
   background: black;
   width: 250px;
-  margin-left: -126px;
+  margin-left: -127px;
   height: 440px;
   top: 75px;
   border: solid 3px black;
@@ -157,7 +157,7 @@
 
 .cd-mobile.cd-lg > .cd-screen {
   width: 325px;
-  margin-left: -163.8px;
+  margin-left: -165.1px;
   height: 572px;
   top: 97.5px;
   border: solid 3.9px black;
@@ -211,7 +211,7 @@
 
 .cd-mobile.cd-sm > .cd-screen {
   width: 175px;
-  margin-left: -88.2px;
+  margin-left: -88.9px;
   height: 308px;
   top: 52.5px;
   border: solid 2.1px black;
@@ -265,7 +265,7 @@
 
 .cd-mobile.cd-xs > .cd-screen {
   width: 125px;
-  margin-left: -63px;
+  margin-left: -63.5px;
   height: 220px;
   top: 37.5px;
   border: solid 1.5px black;

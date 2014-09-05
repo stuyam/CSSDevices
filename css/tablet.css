@@ -1,0 +1,164 @@
+.cd-tablet {
+  border: 0;
+  position: relative;
+  z-index: 50;
+  border-radius: 25px;
+  width: 428px;
+  height: 600px;
+  display: block; }
+
+.cd-tablet > .cd-cam {
+  background: #3c3d3d; }
+
+.cd-tablet.cd-black {
+  background: #1e1e1e;
+  border: 2px solid #979797; }
+
+.cd-tablet.cd-black > .cd-home {
+  background: #242324; }
+
+.cd-tablet.cd-white {
+  background: #fafafa;
+  border: 2px solid #D5D5D5; }
+
+.cd-tablet.cd-white > .cd-home {
+  background: #EFEFEF; }
+
+.cd-tablet > .cd-home,
+.cd-tablet > .cd-cam,
+.cd-tablet > .cd-screen {
+  position: absolute;
+  left: 50%; }
+
+.cd-tablet > .cd-cam {
+  top: 22px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-left: -3px; }
+
+.cd-tablet > .cd-home {
+  bottom: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: -15px; }
+
+.cd-tablet > .cd-home::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin: 10px;
+  border-radius: 2px; }
+
+.cd-tablet.cd-black > .cd-home::after {
+  border: 1px solid #393839; }
+
+.cd-tablet.cd-white > .cd-home::after {
+  border: 1px solid #D5D5D5; }
+
+.cd-tablet > .cd-screen {
+  background: black;
+  width: 390px;
+  height: 500px;
+  margin-left: -197px;
+  top: 50px;
+  border-radius: 2px;
+  overflow: hidden;
+  border: solid 2px black; }
+
+/*---------  Tablet cd-lg --------*/
+.cd-tablet.cd-lg {
+  border-width: 2.6px;
+  border-radius: 32.5px;
+  width: 556.4px;
+  height: 780px; }
+
+.cd-tablet.cd-lg > .cd-cam {
+  top: 28.6px;
+  width: 10.4px;
+  height: 10.4px;
+  margin-left: -5.2px; }
+
+.cd-tablet.cd-lg > .cd-home {
+  bottom: 13px;
+  width: 39px;
+  height: 39px;
+  margin-left: -19.5px; }
+
+.cd-tablet.cd-lg > .cd-screen {
+  width: 507px;
+  height: 650px;
+  margin-left: -253.5px;
+  top: 65px;
+  border-radius: 2.6px; }
+
+.cd-tablet.cd-lg > .cd-home::after {
+  width: 10.4px;
+  height: 10.4px;
+  margin: 13px; }
+
+/*---------  Tablet cd-sm --------*/
+.cd-tablet.cd-sm {
+  border-width: 1.4px;
+  border-radius: 17.5px;
+  width: 299.6px;
+  height: 420px; }
+
+.cd-tablet.cd-sm > .cd-cam {
+  top: 15.4px;
+  width: 5.6px;
+  height: 5.6px;
+  margin-left: -2.8px; }
+
+.cd-tablet.cd-sm > .cd-home {
+  bottom: 7px;
+  width: 21px;
+  height: 21px;
+  margin-left: -10.5px; }
+
+.cd-tablet.cd-sm > .cd-screen {
+  width: 273px;
+  height: 350px;
+  margin-left: -136.5px;
+  top: 35px;
+  border-radius: 1.4px; }
+
+.cd-tablet.cd-sm > .cd-home::after {
+  width: 5.6px;
+  height: 5.6px;
+  margin: 7px; }
+
+/*---------  Tablet cd-xs --------*/
+.cd-tablet.cd-xs {
+  border-width: 1px;
+  border-radius: 12.5px;
+  width: 214px;
+  height: 300px; }
+
+.cd-tablet.cd-xs > .cd-cam {
+  top: 11px;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px; }
+
+.cd-tablet.cd-xs > .cd-home {
+  bottom: 5px;
+  width: 15px;
+  height: 15px;
+  margin-left: -7.5px; }
+
+.cd-tablet.cd-xs > .cd-screen {
+  width: 195px;
+  height: 250px;
+  margin-left: -97.5px;
+  top: 25px;
+  border-radius: 1px; }
+
+.cd-tablet.cd-xs > .cd-home::after {
+  width: 4px;
+  height: 4px;
+  margin: 5px; }
+
+/*# sourceMappingURL=tablet.css.map */

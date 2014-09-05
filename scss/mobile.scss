@@ -98,7 +98,6 @@ $ratio: 1 !global;
 	margin: 18px;
 	border-radius:4px;
 	border:2px solid $home-btn-inner;
-
 }
 
 .cd-mobile > .cd-home, 
@@ -146,7 +145,7 @@ $ratio: 1 !global;
 .cd-mobile > .cd-screen{
   background: black;
   width: 250px;
-  margin-left: -126px;
+  margin-left: -127px;
   height: 440px;
   top: 75px;
   border: solid $bezel black;
@@ -222,7 +221,7 @@ $sizes: cd-lg cd-sm cd-xs;
 
 	.cd-mobile.#{$size} > .cd-screen{
 	  width: 250px * $ratio;
-	  margin-left: -126px * $ratio;
+	  margin-left: -127px * $ratio;
 	  height: 440px * $ratio;
 	  top: 75px * $ratio;
 	  border: solid $bezel * $ratio black;
