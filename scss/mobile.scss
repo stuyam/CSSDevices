@@ -73,7 +73,7 @@ $ratio: 1 !global;
 .cd-mobile > .cd-ear{
 	background: $ear;
 }
-
+  
 .cd-mobile > .cd-cam{
 	background: $cam;
 }
@@ -146,7 +146,7 @@ $ratio: 1 !global;
 .cd-mobile > .cd-screen{
   background: black;
   width: 250px;
-  margin-left: -127px;
+  margin-left: -126px;
   height: 440px;
   top: 75px;
   border: solid $bezel black;
@@ -217,18 +217,16 @@ $sizes: cd-lg cd-sm cd-xs;
 		height:17px * $ratio;
 		margin: 18px * $ratio;
 		border-radius:4px * $ratio;
-		border:1px * $ratio solid $home-btn-inner;
-
 	}
 
 	.cd-mobile.#{$size} > .cd-screen{
 	  width: 250px * $ratio;
-	  margin-left: -127px * $ratio;
+	  margin-left: -126px * $ratio;
 	  height: 440px * $ratio;
 	  top: 75px * $ratio;
 	  border: solid $bezel * $ratio black;
 	  border-radius: 2px * $ratio;
-	}
+	} 
 }
 
 

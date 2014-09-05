@@ -103,7 +103,7 @@
 .cd-mobile > .cd-screen {
   background: black;
   width: 250px;
-  margin-left: -127px;
+  margin-left: -126px;
   height: 440px;
   top: 75px;
   border: solid 3px black;
@@ -152,12 +152,11 @@
   width: 22.1px;
   height: 22.1px;
   margin: 23.4px;
-  border-radius: 5.2px;
-  border: 1.3px solid #393839; }
+  border-radius: 5.2px; }
 
 .cd-mobile.cd-lg > .cd-screen {
   width: 325px;
-  margin-left: -165.1px;
+  margin-left: -163.8px;
   height: 572px;
   top: 97.5px;
   border: solid 3.9px black;
@@ -206,12 +205,11 @@
   width: 11.9px;
   height: 11.9px;
   margin: 12.6px;
-  border-radius: 2.8px;
-  border: 0.7px solid #393839; }
+  border-radius: 2.8px; }
 
 .cd-mobile.cd-sm > .cd-screen {
   width: 175px;
-  margin-left: -88.9px;
+  margin-left: -88.2px;
   height: 308px;
   top: 52.5px;
   border: solid 2.1px black;
@@ -260,12 +258,11 @@
   width: 8.5px;
   height: 8.5px;
   margin: 9px;
-  border-radius: 2px;
-  border: 0.5px solid #393839; }
+  border-radius: 2px; }
 
 .cd-mobile.cd-xs > .cd-screen {
   width: 125px;
-  margin-left: -63.5px;
+  margin-left: -63px;
   height: 220px;
   top: 37.5px;
   border: solid 1.5px black;
