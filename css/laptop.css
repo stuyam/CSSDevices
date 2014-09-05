@@ -1,0 +1,187 @@
+.cd-laptop {
+  position: relative;
+  width: 922px;
+  height: 516px; }
+
+.cd-laptop > .cd-top {
+  position: absolute;
+  width: 744px;
+  height: 500px;
+  left: 50%;
+  margin-left: -372px;
+  background: #d6d5da;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px; }
+
+.cd-laptop > .cd-bottom {
+  position: absolute;
+  width: 922px;
+  height: 18px;
+  background: #BDBDBD;
+  bottom: 0px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px; }
+
+.cd-laptop > .cd-screen {
+  position: absolute;
+  width: 684px;
+  height: 440px;
+  left: 50%;
+  margin-left: -342px;
+  top: 30px;
+  background: #3c3d3d;
+  border-radius: 2px;
+  overflow: hidden;
+  border: 2px solid #3c3d3d; }
+
+.cd-laptop > .cd-cam {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 50%;
+  margin-left: -4px;
+  top: 12px;
+  background: #3c3d3d;
+  border-radius: 50%; }
+
+.cd-laptop > .cd-notch {
+  position: absolute;
+  width: 150px;
+  height: 8px;
+  left: 50%;
+  bottom: 8px;
+  margin-left: -75px;
+  background: #d6d5da;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 2px solid #BDBDBD; }
+
+/*---------  Laptop cd-lg --------*/
+.cd-laptop.cd-lg {
+  width: 1198.6px;
+  height: 670.8px; }
+
+.cd-laptop.cd-lg > .cd-top {
+  width: 967.2px;
+  height: 650px;
+  margin-left: -483.6px;
+  border-top-left-radius: 26px;
+  border-top-right-radius: 26px;
+  border-bottom-left-radius: 9.1px;
+  border-bottom-right-radius: 9.1px; }
+
+.cd-laptop.cd-lg > .cd-bottom {
+  width: 1198.6px;
+  height: 26px;
+  border-bottom-left-radius: 130px;
+  border-bottom-right-radius: 130px; }
+
+.cd-laptop.cd-lg > .cd-screen {
+  width: 889.2px;
+  height: 572px;
+  margin-left: -444.6px;
+  top: 39px;
+  border-radius: 6.5px; }
+
+.cd-laptop.cd-lg > .cd-cam {
+  width: 10.4px;
+  height: 10.4px;
+  margin-left: -5.2px;
+  top: 15.6px; }
+
+.cd-laptop.cd-lg > .cd-notch {
+  width: 195px;
+  height: 10.4px;
+  bottom: 10.4px;
+  margin-left: -97.5px;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+  border-top: 2.6px solid #BDBDBD; }
+
+/*---------  Laptop cd-sm --------*/
+.cd-laptop.cd-sm {
+  width: 645.4px;
+  height: 361.2px; }
+
+.cd-laptop.cd-sm > .cd-top {
+  width: 520.8px;
+  height: 350px;
+  margin-left: -260.4px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 4.9px;
+  border-bottom-right-radius: 4.9px; }
+
+.cd-laptop.cd-sm > .cd-bottom {
+  width: 645.4px;
+  height: 14px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px; }
+
+.cd-laptop.cd-sm > .cd-screen {
+  width: 478.8px;
+  height: 308px;
+  margin-left: -239.4px;
+  top: 21px;
+  border-radius: 3.5px; }
+
+.cd-laptop.cd-sm > .cd-cam {
+  width: 5.6px;
+  height: 5.6px;
+  margin-left: -2.8px;
+  top: 8.4px; }
+
+.cd-laptop.cd-sm > .cd-notch {
+  width: 105px;
+  height: 5.6px;
+  bottom: 5.6px;
+  margin-left: -52.5px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-top: 1.4px solid #BDBDBD; }
+
+/*---------  Laptop cd-xs --------*/
+.cd-laptop.cd-xs {
+  width: 461px;
+  height: 258px; }
+
+.cd-laptop.cd-xs > .cd-top {
+  width: 372px;
+  height: 250px;
+  margin-left: -186px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 3.5px;
+  border-bottom-right-radius: 3.5px; }
+
+.cd-laptop.cd-xs > .cd-bottom {
+  width: 461px;
+  height: 10px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px; }
+
+.cd-laptop.cd-xs > .cd-screen {
+  width: 342px;
+  height: 220px;
+  margin-left: -171px;
+  top: 15px;
+  border-radius: 2.5px; }
+
+.cd-laptop.cd-xs > .cd-cam {
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  top: 6px; }
+
+.cd-laptop.cd-xs > .cd-notch {
+  width: 75px;
+  height: 4px;
+  bottom: 4px;
+  margin-left: -37.5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid #BDBDBD; }
+
+/*# sourceMappingURL=laptop.css.map */
