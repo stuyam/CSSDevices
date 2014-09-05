@@ -93,11 +93,11 @@ $ratio: 1 !global;
 .cd-5c-white > .cd-home::after{ 
     content: "";
     display:block;
-	width:17px;
-	height:17px;
+	width:15px;
+	height:15px;
 	margin: 18px;
 	border-radius:4px;
-	border:1px solid $home-btn-inner;
+	border:2px solid $home-btn-inner;
 
 }
 
@@ -111,7 +111,7 @@ $ratio: 1 !global;
 }
 
 .cd-mobile > .cd-cam{
-  top: 20px;
+  top: 23px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -177,7 +177,7 @@ $sizes: cd-lg cd-sm cd-xs;
 	}
 
 	.cd-mobile.#{$size} > .cd-cam{
-	  top: 20px * $ratio;
+	  top: 23px * $ratio;
 	  width: 8px * $ratio;
 	  height: 8px * $ratio;
 	  margin-left: -4px * $ratio; 
@@ -213,10 +213,11 @@ $sizes: cd-lg cd-sm cd-xs;
 	.cd-5c-red.#{$size} > .cd-home::after,
 	.cd-5c-yellow.#{$size} > .cd-home::after,
 	.cd-5c-white.#{$size} > .cd-home::after{ 
-		width:17px * $ratio;
-		height:17px * $ratio;
+		width:15px * $ratio;
+		height:15px * $ratio;
 		margin: 18px * $ratio;
 		border-radius:4px * $ratio;
+		border:2px * $ratio solid $home-btn-inner;
 	}
 
 	.cd-mobile.#{$size} > .cd-screen{

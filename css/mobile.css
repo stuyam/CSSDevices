@@ -57,11 +57,11 @@
 .cd-5c-white > .cd-home::after {
   content: "";
   display: block;
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   margin: 18px;
   border-radius: 4px;
-  border: 1px solid #393839; }
+  border: 2px solid #393839; }
 
 .cd-mobile > .cd-home,
 .cd-mobile > .cd-ear,
@@ -72,7 +72,7 @@
   overflow: hidden; }
 
 .cd-mobile > .cd-cam {
-  top: 20px;
+  top: 23px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -117,7 +117,7 @@
   border-width: 3.9px; }
 
 .cd-mobile.cd-lg > .cd-cam {
-  top: 26px;
+  top: 29.9px;
   width: 10.4px;
   height: 10.4px;
   margin-left: -5.2px; }
@@ -149,10 +149,11 @@
 .cd-5c-red.cd-lg > .cd-home::after,
 .cd-5c-yellow.cd-lg > .cd-home::after,
 .cd-5c-white.cd-lg > .cd-home::after {
-  width: 22.1px;
-  height: 22.1px;
+  width: 19.5px;
+  height: 19.5px;
   margin: 23.4px;
-  border-radius: 5.2px; }
+  border-radius: 5.2px;
+  border: 2.6px solid #393839; }
 
 .cd-mobile.cd-lg > .cd-screen {
   width: 325px;
@@ -170,7 +171,7 @@
   border-width: 2.1px; }
 
 .cd-mobile.cd-sm > .cd-cam {
-  top: 14px;
+  top: 16.1px;
   width: 5.6px;
   height: 5.6px;
   margin-left: -2.8px; }
@@ -202,10 +203,11 @@
 .cd-5c-red.cd-sm > .cd-home::after,
 .cd-5c-yellow.cd-sm > .cd-home::after,
 .cd-5c-white.cd-sm > .cd-home::after {
-  width: 11.9px;
-  height: 11.9px;
+  width: 10.5px;
+  height: 10.5px;
   margin: 12.6px;
-  border-radius: 2.8px; }
+  border-radius: 2.8px;
+  border: 1.4px solid #393839; }
 
 .cd-mobile.cd-sm > .cd-screen {
   width: 175px;
@@ -223,7 +225,7 @@
   border-width: 1.5px; }
 
 .cd-mobile.cd-xs > .cd-cam {
-  top: 10px;
+  top: 11.5px;
   width: 4px;
   height: 4px;
   margin-left: -2px; }
@@ -255,10 +257,11 @@
 .cd-5c-red.cd-xs > .cd-home::after,
 .cd-5c-yellow.cd-xs > .cd-home::after,
 .cd-5c-white.cd-xs > .cd-home::after {
-  width: 8.5px;
-  height: 8.5px;
+  width: 7.5px;
+  height: 7.5px;
   margin: 9px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  border: 1px solid #393839; }
 
 .cd-mobile.cd-xs > .cd-screen {
   width: 125px;
