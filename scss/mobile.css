@@ -9,25 +9,16 @@
   background: #1e1e1e; }
 
 /*---------  iPhone 5s --------*/
-.cd-5s-gold {
+.cd-5s-gold, .cd-5s-gold > .cd-home {
   background-color: #fafafa;
   border: 3px solid #ecdcc8; }
 
-.cd-5s-gold > .cd-home {
-  border: 3px solid #ecdcc8; }
-
-.cd-5s-silver {
+.cd-5s-silver, .cd-5s-silver > .cd-home {
   background-color: #fafafa;
   border: 3px solid #bdbfbe; }
 
-.cd-5s-silver > .cd-home {
-  border: 3px solid #bdbfbe; }
-
-.cd-5s-black {
-  border: 3px solid #bdbfbe; }
-
-.cd-5s-black > .cd-home {
-  border: 3px solid #bdbfbe; }
+.cd-5s-black, .cd-5s-black > .cd-home {
+  border: 3px solid #2c2b2c; }
 
 /*---------  iPhone 5c --------*/
 .cd-5c-blue {
@@ -45,6 +36,7 @@
 .cd-5c-white {
   border: 3px solid #efefee; }
 
+/*---------  iPhone Parts --------*/
 .cd-mobile > .cd-ear {
   background: #292728; }
 
@@ -91,17 +83,153 @@
   margin-left: -27px; }
 
 .cd-mobile > .cd-home {
-  bottom: 16px;
+  bottom: 14px;
   width: 54px;
   height: 54px;
   border-radius: 50%;
   margin-left: -27px; }
 
+.cd-5s-gold > .cd-home,
+.cd-5s-silver > .cd-home,
+.cd-5s-black > .cd-home {
+  bottom: 12px;
+  width: 50px;
+  height: 50px;
+  margin-left: -30px; }
+
 .cd-mobile > .cd-screen {
   background: black;
   width: 250px;
-  margin-left: -125px;
+  margin-left: -127px;
   height: 440px;
-  top: 75px; }
+  top: 75px;
+  border: solid 3px black;
+  border-radius: 2px; }
+
+/*---------  iPhone cd-lg --------*/
+.cd-mobile.cd-lg {
+  width: 364px;
+  height: 780px;
+  border-radius: 45.5px;
+  border-width: 3.9px; }
+
+.cd-mobile.cd-lg > .cd-cam {
+  top: 26px;
+  width: 10.4px;
+  height: 10.4px;
+  margin-left: -5.2px; }
+
+.cd-mobile.cd-lg > .cd-ear {
+  top: 55.9px;
+  width: 70.2px;
+  height: 10.4px;
+  border-radius: 6.5px;
+  margin-left: -35.1px; }
+
+.cd-mobile.cd-lg > .cd-home {
+  bottom: 18.2px;
+  width: 70.2px;
+  height: 70.2px;
+  margin-left: -35.1px; }
+
+.cd-mobile.cd-lg.cd-5s-gold > .cd-home,
+.cd-mobile.cd-lg.cd-5s-silver > .cd-home,
+.cd-mobile.cd-lg.cd-5s-black > .cd-home {
+  bottom: 15.6px;
+  width: 65px;
+  height: 65px;
+  margin-left: -39px; }
+
+.cd-mobile.cd-lg > .cd-screen {
+  width: 325px;
+  margin-left: -165.1px;
+  height: 572px;
+  top: 97.5px;
+  border: solid 3.9px black;
+  border-radius: 2.6px; }
+
+/*---------  iPhone cd-sm --------*/
+.cd-mobile.cd-sm {
+  width: 196px;
+  height: 420px;
+  border-radius: 24.5px;
+  border-width: 2.1px; }
+
+.cd-mobile.cd-sm > .cd-cam {
+  top: 14px;
+  width: 5.6px;
+  height: 5.6px;
+  margin-left: -2.8px; }
+
+.cd-mobile.cd-sm > .cd-ear {
+  top: 30.1px;
+  width: 37.8px;
+  height: 5.6px;
+  border-radius: 3.5px;
+  margin-left: -18.9px; }
+
+.cd-mobile.cd-sm > .cd-home {
+  bottom: 9.8px;
+  width: 37.8px;
+  height: 37.8px;
+  margin-left: -18.9px; }
+
+.cd-mobile.cd-sm.cd-5s-gold > .cd-home,
+.cd-mobile.cd-sm.cd-5s-silver > .cd-home,
+.cd-mobile.cd-sm.cd-5s-black > .cd-home {
+  bottom: 8.4px;
+  width: 35px;
+  height: 35px;
+  margin-left: -21px; }
+
+.cd-mobile.cd-sm > .cd-screen {
+  width: 175px;
+  margin-left: -88.9px;
+  height: 308px;
+  top: 52.5px;
+  border: solid 2.1px black;
+  border-radius: 1.4px; }
+
+/*---------  iPhone cd-xs --------*/
+.cd-mobile.cd-xs {
+  width: 140px;
+  height: 300px;
+  border-radius: 17.5px;
+  border-width: 1.5px; }
+
+.cd-mobile.cd-xs > .cd-cam {
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px; }
+
+.cd-mobile.cd-xs > .cd-ear {
+  top: 21.5px;
+  width: 27px;
+  height: 4px;
+  border-radius: 2.5px;
+  margin-left: -13.5px; }
+
+.cd-mobile.cd-xs > .cd-home {
+  bottom: 7px;
+  width: 27px;
+  height: 27px;
+  margin-left: -13.5px; }
+
+.cd-mobile.cd-xs.cd-5s-gold > .cd-home,
+.cd-mobile.cd-xs.cd-5s-silver > .cd-home,
+.cd-mobile.cd-xs.cd-5s-black > .cd-home {
+  bottom: 6px;
+  width: 25px;
+  height: 25px;
+  margin-left: -15px; }
+
+.cd-mobile.cd-xs > .cd-screen {
+  width: 125px;
+  margin-left: -63.5px;
+  height: 220px;
+  top: 37.5px;
+  border: solid 1.5px black;
+  border-radius: 1px; }
 
 /*# sourceMappingURL=mobile.css.map */
