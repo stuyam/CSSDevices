@@ -101,7 +101,10 @@ $ratio: 1 !global;
 
 }
 
-.cd-mobile > .cd-home, .cd-mobile > .cd-ear, .cd-mobile > .cd-cam, .cd-mobile > .cd-screen{
+.cd-mobile > .cd-home, 
+.cd-mobile > .cd-ear, 
+.cd-mobile > .cd-cam, 
+.cd-mobile > .cd-screen{
   position: absolute;
   left: 50%;
   overflow: hidden;
@@ -202,6 +205,20 @@ $sizes: cd-lg cd-sm cd-xs;
 		width: 50px * $ratio;
 		height: 50px * $ratio;
 		margin-left: -30px * $ratio;
+		border-width: $bezel * $ratio;
+	}
+
+	.cd-5c-blue.#{$size} > .cd-home::after, 
+	.cd-5c-green.#{$size} > .cd-home::after,
+	.cd-5c-red.#{$size} > .cd-home::after,
+	.cd-5c-yellow.#{$size} > .cd-home::after,
+	.cd-5c-white.#{$size} > .cd-home::after{ 
+		width:17px * $ratio;
+		height:17px * $ratio;
+		margin: 18px * $ratio;
+		border-radius:4px * $ratio;
+		border:1px * $ratio solid $home-btn-inner;
+
 	}
 
 	.cd-mobile.#{$size} > .cd-screen{
