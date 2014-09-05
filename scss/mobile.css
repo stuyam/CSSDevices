@@ -1,0 +1,107 @@
+.cd-mobile {
+  border: 0;
+  position: relative;
+  z-index: 50;
+  border-radius: 35px;
+  width: 280px;
+  height: 600px;
+  display: block;
+  background: #1e1e1e; }
+
+/*---------  iPhone 5s --------*/
+.cd-5s-gold {
+  background-color: #fafafa;
+  border: 3px solid #ecdcc8; }
+
+.cd-5s-gold > .cd-home {
+  border: 3px solid #ecdcc8; }
+
+.cd-5s-silver {
+  background-color: #fafafa;
+  border: 3px solid #bdbfbe; }
+
+.cd-5s-silver > .cd-home {
+  border: 3px solid #bdbfbe; }
+
+.cd-5s-black {
+  border: 3px solid #bdbfbe; }
+
+.cd-5s-black > .cd-home {
+  border: 3px solid #bdbfbe; }
+
+/*---------  iPhone 5c --------*/
+.cd-5c-blue {
+  border: 3px solid #7ec4fc; }
+
+.cd-5c-green {
+  border: 3px solid #b3f390; }
+
+.cd-5c-red {
+  border: 3px solid #fc828d; }
+
+.cd-5c-yellow {
+  border: 3px solid #fff38a; }
+
+.cd-5c-white {
+  border: 3px solid #efefee; }
+
+.cd-mobile > .cd-ear {
+  background: #292728; }
+
+.cd-mobile > .cd-cam {
+  background: #3c3d3d; }
+
+.cd-5c-blue > .cd-home,
+.cd-5c-green > .cd-home,
+.cd-5c-red > .cd-home,
+.cd-5c-yellow > .cd-home,
+.cd-5c-white > .cd-home {
+  background: #242324; }
+
+.cd-5c-blue > .cd-home::after,
+.cd-5c-green > .cd-home::after,
+.cd-5c-red > .cd-home::after,
+.cd-5c-yellow > .cd-home::after,
+.cd-5c-white > .cd-home::after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin: 18px;
+  border-radius: 4px;
+  border: 1px solid #393839; }
+
+.cd-mobile > .cd-home, .cd-mobile > .cd-ear, .cd-mobile > .cd-cam, .cd-mobile > .cd-screen {
+  position: absolute;
+  left: 50%;
+  overflow: hidden; }
+
+.cd-mobile > .cd-cam {
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: -4px; }
+
+.cd-mobile > .cd-ear {
+  top: 43px;
+  width: 54px;
+  height: 8px;
+  border-radius: 5px;
+  margin-left: -27px; }
+
+.cd-mobile > .cd-home {
+  bottom: 16px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  margin-left: -27px; }
+
+.cd-mobile > .cd-screen {
+  background: black;
+  width: 250px;
+  margin-left: -125px;
+  height: 440px;
+  top: 75px; }
+
+/*# sourceMappingURL=mobile.css.map */

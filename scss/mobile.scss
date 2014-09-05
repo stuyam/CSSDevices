@@ -1,0 +1,149 @@
+$blue-bezel: #7ec4fc;
+$green-bezel: #b3f390;
+$red-bezel: #fc828d;
+$yellow-bezel: #fff38a;
+$white-bezel: #efefee;
+
+$silver-bezel: #bdbfbe;
+$gold-bezel: #ecdcc8;
+$black-bezel: #777679;
+
+$cam: #3c3d3d;
+$ear: #292728;
+$home-btn: #242324;
+$home-btn-inner: #393839;
+
+$phone-black: #1e1e1e;
+$phone-white: #fafafa;
+
+$bezel: 3px;
+
+.cd-mobile{
+  border: 0;
+  position: relative;
+  z-index: 50;
+  border-radius: 35px;
+  width: 280px;
+  height: 600px;
+  display: block;
+  background: $phone-black;
+}
+
+/*---------  iPhone 5s --------*/
+
+.cd-5s-gold{
+  background-color: $phone-white;
+  border: $bezel solid $gold-bezel;
+}
+
+.cd-5s-gold > .cd-home{
+  border: $bezel solid $gold-bezel;
+}
+
+.cd-5s-silver{
+  background-color: $phone-white;
+  border: $bezel solid $silver-bezel;
+}
+
+.cd-5s-silver > .cd-home{
+  border: $bezel solid $silver-bezel;
+}
+
+.cd-5s-black{
+  border: $bezel solid $silver-bezel;
+}
+
+.cd-5s-black > .cd-home{
+  border: $bezel solid $silver-bezel;
+}
+
+/*---------  iPhone 5c --------*/
+
+.cd-5c-blue{
+  border: $bezel solid $blue-bezel;
+}
+
+.cd-5c-green{
+  border: $bezel solid $green-bezel;
+}
+
+.cd-5c-red{
+  border: $bezel solid $red-bezel;
+}
+
+.cd-5c-yellow{
+  border: $bezel solid $yellow-bezel;
+}
+
+.cd-5c-white{
+  border: $bezel solid $white-bezel;
+}
+
+.cd-mobile > .cd-ear{
+	background: $ear;
+}
+
+.cd-mobile > .cd-cam{
+	background: $cam;
+}
+
+.cd-5c-blue > .cd-home,
+.cd-5c-green > .cd-home, 
+.cd-5c-red > .cd-home,
+.cd-5c-yellow > .cd-home,
+.cd-5c-white > .cd-home{
+  background: $home-btn;
+}
+
+.cd-5c-blue > .cd-home::after, 
+.cd-5c-green > .cd-home::after,
+.cd-5c-red > .cd-home::after,
+.cd-5c-yellow > .cd-home::after,
+.cd-5c-white > .cd-home::after{ 
+    content: "";
+    display:block;
+	width:17px;
+	height:17px;
+	margin: 18px;
+	border-radius:4px;
+	border:1px solid $home-btn-inner;
+
+}
+
+.cd-mobile > .cd-home, .cd-mobile > .cd-ear, .cd-mobile > .cd-cam, .cd-mobile > .cd-screen{
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
+}
+
+.cd-mobile > .cd-cam{
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: -4px;
+}
+
+.cd-mobile > .cd-ear{
+  top: 43px;
+  width: 54px;
+  height: 8px;
+  border-radius: 5px;
+  margin-left: -27px;
+}
+
+.cd-mobile > .cd-home{
+  bottom: 16px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  margin-left: -27px;
+}
+
+.cd-mobile > .cd-screen{
+  background: black;
+  width: 250px;
+  margin-left: -125px;
+  height: 440px;
+  top: 75px;
+}
