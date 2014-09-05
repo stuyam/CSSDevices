@@ -1,0 +1,33 @@
+.cd-mobile,
+.cd-tablet, 
+.cd-laptop, 
+.cd-browser,
+.cd-mobile div,
+.cd-tablet div, 
+.cd-laptop div, 
+.cd-browser div,
+.cd-mobile div::after,
+.cd-tablet div::after, 
+.cd-laptop div::after, 
+.cd-browser div::after{
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  box-sizing: content-box;
+}
+
+.cd-center{
+  position: relative;
+  margin: auto;
+}
+
+.cd-fill-screen{
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+}
