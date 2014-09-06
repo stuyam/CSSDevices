@@ -396,7 +396,8 @@
   height: 650px;
   margin-left: -253.5px;
   top: 65px;
-  border-radius: 2.6px; }
+  border-radius: 2.6px;
+  border: solid 2.6px black; }
 
 .cd-tablet.cd-lg > .cd-home::after {
   width: 10.4px;
@@ -427,7 +428,8 @@
   height: 350px;
   margin-left: -136.5px;
   top: 35px;
-  border-radius: 1.4px; }
+  border-radius: 1.4px;
+  border: solid 1.4px black; }
 
 .cd-tablet.cd-sm > .cd-home::after {
   width: 5.6px;
@@ -458,7 +460,8 @@
   height: 250px;
   margin-left: -97.5px;
   top: 25px;
-  border-radius: 1px; }
+  border-radius: 1px;
+  border: solid 1px black; }
 
 .cd-tablet.cd-xs > .cd-home::after {
   width: 4px;
@@ -550,11 +553,12 @@
   height: 572px;
   margin-left: -444.6px;
   top: 39px;
-  border-radius: 6.5px; }
+  border-radius: 6.5px;
+  border: 2.6px solid #3c3d3d; }
 
 .cd-laptop.cd-lg > .cd-cam {
-  width: 10.4px;
-  height: 10.4px;
+  width: 10px;
+  height: 10px;
   margin-left: -5.2px;
   top: 15.6px; }
 
@@ -592,11 +596,12 @@
   height: 308px;
   margin-left: -239.4px;
   top: 21px;
-  border-radius: 3.5px; }
+  border-radius: 3.5px;
+  border: 1.4px solid #3c3d3d; }
 
 .cd-laptop.cd-sm > .cd-cam {
-  width: 5.6px;
-  height: 5.6px;
+  width: 6px;
+  height: 6px;
   margin-left: -2.8px;
   top: 8.4px; }
 
@@ -634,7 +639,8 @@
   height: 220px;
   margin-left: -171px;
   top: 15px;
-  border-radius: 2.5px; }
+  border-radius: 2.5px;
+  border: 1px solid #3c3d3d; }
 
 .cd-laptop.cd-xs > .cd-cam {
   width: 4px;

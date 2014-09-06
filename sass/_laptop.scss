@@ -115,11 +115,12 @@ $sizes: cd-lg cd-sm cd-xs;
     margin-left: -342px * $ratio;
     top: 30px * $ratio;
     border-radius: 5px * $ratio;
+    border: 2px * $ratio solid $black;
   }
 
   .cd-laptop.#{$size} > .cd-cam{
-    width:8px * $ratio;
-    height:8px * $ratio;
+    width:round(8px * $ratio);
+    height:round(8px * $ratio);
     margin-left: -4px * $ratio;
     top: 12px * $ratio;
   }

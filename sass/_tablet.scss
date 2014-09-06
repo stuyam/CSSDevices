@@ -138,6 +138,7 @@ $sizes: cd-lg cd-sm cd-xs;
     margin-left: -195px * $ratio;
     top: 50px * $ratio;
     border-radius: 2px * $ratio;
+    border: solid 2px * $ratio black;
   }
 
   .cd-tablet.#{$size} > .cd-home::after{ 
