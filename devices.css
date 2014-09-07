@@ -502,7 +502,7 @@
   margin-left: -342px;
   top: 30px;
   background: #3c3d3d;
-  border-radius: 2px;
+  border-radius: 1px;
   overflow: hidden;
   border: 2px solid #3c3d3d; }
 
@@ -553,7 +553,6 @@
   height: 572px;
   margin-left: -444.6px;
   top: 39px;
-  border-radius: 6.5px;
   border: 2.6px solid #3c3d3d; }
 
 .cd-laptop.cd-lg > .cd-cam {
@@ -596,7 +595,6 @@
   height: 308px;
   margin-left: -239.4px;
   top: 21px;
-  border-radius: 3.5px;
   border: 1.4px solid #3c3d3d; }
 
 .cd-laptop.cd-sm > .cd-cam {
@@ -639,7 +637,6 @@
   height: 220px;
   margin-left: -171px;
   top: 15px;
-  border-radius: 2.5px;
   border: 1px solid #3c3d3d; }
 
 .cd-laptop.cd-xs > .cd-cam {
@@ -667,51 +664,56 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 30px;
-  background: #e8e8e8;
+  height: 35px;
+  background: #eaeaea;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
 
 .cd-browser .cd-red, .cd-browser .cd-yellow, .cd-browser .cd-green {
   display: block;
-  width: 12px;
-  height: 12px;
-  margin: 10px 0px 10px 6px;
+  width: 11px;
+  height: 11px;
+  margin: 12px 0px 10px 6px;
   border-radius: 50%;
-  background: blue;
   float: left; }
 
 .cd-browser .cd-red {
   margin-left: 13px;
-  background: #de6f64; }
+  background: #fc615d;
+  border: 1px solid #ea5954; }
 
 .cd-browser .cd-yellow {
-  background: #e6bb48; }
+  background: #fdbf44;
+  border: 1px solid #eeb244; }
 
 .cd-browser .cd-green {
-  background: #5acb8a; }
+  background: #34cf47;
+  border: 1px solid #36bd44; }
 
 .cd-browser .cd-url {
   position: absolute;
-  top: 4px;
-  left: 75px;
-  right: 5px;
-  bottom: 3px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  top: 6px;
+  left: 80px;
+  right: 6px;
+  bottom: 6px;
   border-radius: 3px;
   padding: 2px 2px 2px 10px;
-  background: white;
-  color: #B6B5B5;
+  background: #ffffff;
+  color: #6E6E6E;
   font-size: 14px; }
 
 .cd-browser .cd-page {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 0px;
   right: 0px;
   bottom: 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background: white;
-  border: 2px solid #e8e8e8; }
+  border: 1px solid #D6D6D6; }
 
 /*# sourceMappingURL=devices.css.map */

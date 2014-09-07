@@ -42,7 +42,7 @@ $ratio: 1 !global;
   margin-left: -342px;
   top: 30px;
   background: $black;
-  border-radius: 2px;
+  border-radius: 1px;
   overflow: hidden;
   border: 2px solid $black;
 }
@@ -114,7 +114,6 @@ $sizes: cd-lg cd-sm cd-xs;
     height:440px * $ratio;
     margin-left: -342px * $ratio;
     top: 30px * $ratio;
-    border-radius: 5px * $ratio;
     border: 2px * $ratio solid $black;
   }
 
