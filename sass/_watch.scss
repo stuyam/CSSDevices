@@ -1,0 +1,99 @@
+$gold-bezel: #e9d296;
+$silver-bezel: #b3f390;
+$rose-gold-bezel: #e5baa3;
+
+$red-strap: #ff4838;
+$blue-strap: #ecdcc8;
+$silver-strap: #2c2b2c;
+
+$screen: #030303;
+
+$bezel: 3px;
+$ratio: 1 !global;
+
+.cd-watch{
+  border: 0;
+  position: relative;
+  z-index: 50;
+  width: 228px;
+  height: 392px;
+  display: block;
+
+  .cd-body{
+    position: absolute;
+    top: 71px;
+    left: 0px;
+    width: 217px;
+    height: 250px;
+    background: red;
+    box-sizing: border-box;
+    border: 10px solid $gold-bezel;
+    border-radius: 43px;
+    background: $screen;
+  }
+
+  .cd-top-strap{
+    transform: perspective( 400px ) rotateX( 45deg );
+    height: 100px;
+    width: 120px;
+    background: $red-strap;
+    position: absolute;
+    top: -16px;
+    left: 48px;
+    border-radius: 5px;
+  }
+
+  .cd-bottom-strap{
+    transform: perspective( 400px ) rotateX( -45deg );
+    height: 100px;
+    width: 120px;
+    background: $red-strap;
+    position: absolute;
+    bottom: -16px;
+    left: 48px;
+    border-radius: 5px;
+  }
+
+  .cd-top-bracket{
+    height: 100px;
+    width: 156px;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    box-sizing: border-box;
+    border: 8px solid $gold-bezel;
+    border-radius: 10px;
+  }
+
+  .cd-bottom-bracket{
+    height: 100px;
+    width: 156px;
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+    box-sizing: border-box;
+    border: 8px solid $gold-bezel;
+    border-radius: 10px;
+  }
+
+  .cd-crown{
+    width: 20px;
+    height: 45px;
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    border-radius: 5px;
+    background: $gold-bezel;
+  }
+
+  .cd-button{
+    width: 10px;
+    height: 66px;
+    position: absolute;
+    top: 205px;
+    right: 6px;
+    border-radius: 5px;
+    background: $gold-bezel;
+  }
+}
+
