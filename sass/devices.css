@@ -723,54 +723,46 @@
   z-index: 50;
   width: 228px;
   height: 392px;
-  display: block; }
+  display: block;
+  /*---------  Watch cd-lg --------*/
+  /*---------  Watch cd-sm --------*/
+  /*---------  Watch cd-xs --------*/
+  /*---------  Watch Colors --------*/ }
   .cd-watch .cd-body {
     position: absolute;
     top: 71px;
     left: 0px;
     width: 217px;
     height: 250px;
-    background: red;
     box-sizing: border-box;
     border: 10px solid #e9d296;
     border-radius: 43px;
     background: #030303; }
-  .cd-watch .cd-top-strap {
-    transform: perspective(400px) rotateX(45deg);
+  .cd-watch .cd-band {
     height: 100px;
     width: 120px;
+    left: 48px;
     background: #ff4838;
     position: absolute;
-    top: -16px;
-    left: 48px;
     border-radius: 5px; }
-  .cd-watch .cd-bottom-strap {
-    transform: perspective(400px) rotateX(-45deg);
-    height: 100px;
-    width: 120px;
-    background: #ff4838;
-    position: absolute;
-    bottom: -16px;
-    left: 48px;
-    border-radius: 5px; }
-  .cd-watch .cd-top-bracket {
+    .cd-watch .cd-band.cd-top {
+      top: -16px;
+      transform: perspective(400px) rotateX(45deg); }
+    .cd-watch .cd-band.cd-bottom {
+      bottom: -16px;
+      transform: perspective(400px) rotateX(-45deg); }
+  .cd-watch .cd-bracket {
     height: 100px;
     width: 156px;
     position: absolute;
-    top: 60px;
     left: 30px;
     box-sizing: border-box;
     border: 8px solid #e9d296;
     border-radius: 10px; }
-  .cd-watch .cd-bottom-bracket {
-    height: 100px;
-    width: 156px;
-    position: absolute;
-    bottom: 60px;
-    left: 30px;
-    box-sizing: border-box;
-    border: 8px solid #e9d296;
-    border-radius: 10px; }
+    .cd-watch .cd-bracket.cd-top {
+      top: 60px; }
+    .cd-watch .cd-bracket.cd-bottom {
+      bottom: 60px; }
   .cd-watch .cd-crown {
     width: 20px;
     height: 45px;
@@ -787,5 +779,175 @@
     right: 6px;
     border-radius: 5px;
     background: #e9d296; }
+  .cd-watch .cd-screen {
+    position: absolute;
+    background: black;
+    overflow: hidden;
+    width: 150px;
+    height: 184px;
+    top: 105px;
+    left: 34px;
+    border-radius: 5px; }
+    .cd-watch .cd-screen > .cd-fill {
+      border-radius: 5px; }
+  .cd-watch.cd-lg {
+    width: 296.4px;
+    height: 509.6px; }
+  .cd-watch.cd-lg > .cd-body {
+    top: 92.3px;
+    width: 282.1px;
+    height: 325px;
+    border-radius: 55.9px;
+    border-width: 13px; }
+  .cd-watch.cd-lg > .cd-band {
+    height: 130px;
+    width: 156px;
+    left: 62.4px;
+    border-radius: 6.5px; }
+    .cd-watch.cd-lg > .cd-band.cd-top {
+      top: -20.8px;
+      transform: perspective(520px) rotateX(45deg); }
+    .cd-watch.cd-lg > .cd-band.cd-bottom {
+      bottom: -20.8px;
+      transform: perspective(520px) rotateX(-45deg); }
+  .cd-watch.cd-lg > .cd-bracket {
+    height: 130px;
+    width: 202.8px;
+    left: 39px;
+    border-width: 10.4px;
+    border-radius: 13px; }
+    .cd-watch.cd-lg > .cd-bracket.cd-top {
+      top: 78px; }
+    .cd-watch.cd-lg > .cd-bracket.cd-bottom {
+      bottom: 78px; }
+  .cd-watch.cd-lg > .cd-crown {
+    width: 26px;
+    height: 58.5px;
+    top: 169px;
+    border-radius: 6.5px; }
+  .cd-watch.cd-lg > .cd-button {
+    width: 13px;
+    height: 85.8px;
+    top: 266.5px;
+    right: 7.8px;
+    border-radius: 6.5px; }
+  .cd-watch.cd-sm {
+    width: 159.6px;
+    height: 274.4px; }
+  .cd-watch.cd-sm > .cd-body {
+    top: 49.7px;
+    width: 151.9px;
+    height: 175px;
+    border-radius: 30.1px;
+    border-width: 7px; }
+  .cd-watch.cd-sm > .cd-band {
+    height: 70px;
+    width: 84px;
+    left: 33.6px;
+    border-radius: 3.5px; }
+    .cd-watch.cd-sm > .cd-band.cd-top {
+      top: -11.2px;
+      transform: perspective(280px) rotateX(45deg); }
+    .cd-watch.cd-sm > .cd-band.cd-bottom {
+      bottom: -11.2px;
+      transform: perspective(280px) rotateX(-45deg); }
+  .cd-watch.cd-sm > .cd-bracket {
+    height: 70px;
+    width: 109.2px;
+    left: 21px;
+    border-width: 5.6px;
+    border-radius: 7px; }
+    .cd-watch.cd-sm > .cd-bracket.cd-top {
+      top: 42px; }
+    .cd-watch.cd-sm > .cd-bracket.cd-bottom {
+      bottom: 42px; }
+  .cd-watch.cd-sm > .cd-crown {
+    width: 14px;
+    height: 31.5px;
+    top: 91px;
+    border-radius: 3.5px; }
+  .cd-watch.cd-sm > .cd-button {
+    width: 7px;
+    height: 46.2px;
+    top: 143.5px;
+    right: 4.2px;
+    border-radius: 3.5px; }
+  .cd-watch.cd-xs {
+    width: 114px;
+    height: 196px; }
+  .cd-watch.cd-xs > .cd-body {
+    top: 35.5px;
+    width: 108.5px;
+    height: 125px;
+    border-radius: 21.5px;
+    border-width: 5px; }
+  .cd-watch.cd-xs > .cd-band {
+    height: 50px;
+    width: 60px;
+    left: 24px;
+    border-radius: 2.5px; }
+    .cd-watch.cd-xs > .cd-band.cd-top {
+      top: -8px;
+      transform: perspective(200px) rotateX(45deg); }
+    .cd-watch.cd-xs > .cd-band.cd-bottom {
+      bottom: -8px;
+      transform: perspective(200px) rotateX(-45deg); }
+  .cd-watch.cd-xs > .cd-bracket {
+    height: 50px;
+    width: 78px;
+    left: 15px;
+    border-width: 4px;
+    border-radius: 5px; }
+    .cd-watch.cd-xs > .cd-bracket.cd-top {
+      top: 30px; }
+    .cd-watch.cd-xs > .cd-bracket.cd-bottom {
+      bottom: 30px; }
+  .cd-watch.cd-xs > .cd-crown {
+    width: 10px;
+    height: 22.5px;
+    top: 65px;
+    border-radius: 2.5px; }
+  .cd-watch.cd-xs > .cd-button {
+    width: 5px;
+    height: 33px;
+    top: 102.5px;
+    right: 3px;
+    border-radius: 2.5px; }
+  .cd-watch.cd-red-band > .cd-band {
+    background: #ff4838; }
+  .cd-watch.cd-grey-band > .cd-band {
+    background: #cfc0b7; }
+  .cd-watch.cd-navy-band > .cd-band {
+    background: #56586b; }
+  .cd-watch.cd-tan-band > .cd-band {
+    background: #e7d8ce; }
+  .cd-watch.cd-brown-band > .cd-band {
+    background: #9a7a5b; }
+  .cd-watch.cd-black-band > .cd-band {
+    background: #373737; }
+  .cd-watch.cd-gold > .cd-body {
+    border-color: #e9d296; }
+  .cd-watch.cd-gold > .cd-bracket {
+    border-color: #e9d296; }
+  .cd-watch.cd-gold > .cd-crown {
+    background: #e9d296; }
+  .cd-watch.cd-gold > .cd-button {
+    background: #e9d296; }
+  .cd-watch.cd-rosegold > .cd-body {
+    border-color: #e9bfa9; }
+  .cd-watch.cd-rosegold > .cd-bracket {
+    border-color: #e9bfa9; }
+  .cd-watch.cd-rosegold > .cd-crown {
+    background: #e9bfa9; }
+  .cd-watch.cd-rosegold > .cd-button {
+    background: #e9bfa9; }
+  .cd-watch.cd-silver > .cd-body {
+    border-color: #d4d5d7; }
+  .cd-watch.cd-silver > .cd-bracket {
+    border-color: #d4d5d7; }
+  .cd-watch.cd-silver > .cd-crown {
+    background: #d4d5d7; }
+  .cd-watch.cd-silver > .cd-button {
+    background: #d4d5d7; }
 
 /*# sourceMappingURL=devices.css.map */
