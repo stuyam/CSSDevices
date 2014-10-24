@@ -1,0 +1,260 @@
+$gold-bezel: #e9d296;
+$silver-bezel: #d4d5d7;
+$rosegold-bezel: #e9bfa9;
+
+$red-band: #ff4838;
+$grey-band: #cfc0b7;
+$navy-band: #56586b;
+$tan-band: #e7d8ce;
+$brown-band: #9a7a5b;
+$black-band: #373737;
+
+$screen: #030303;
+
+.cd-watch{
+  border: 0;
+  position: relative;
+  z-index: 50;
+  width: 228px;
+  height: 392px;
+  display: block;
+
+  .cd-body{
+    position: absolute;
+    top: 71px;
+    left: 0px;
+    width: 217px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 10px solid $gold-bezel;
+    border-radius: 43px;
+    background: $screen;
+  }
+
+  .cd-band{
+    height: 100px;
+    width: 120px;
+    left: 48px;
+    background: $red-band;
+    position: absolute;
+    border-radius: 5px;
+
+    &.cd-top{
+      top: -16px;
+      transform: perspective( 400px ) rotateX( 45deg );
+    }
+
+    &.cd-bottom{
+      bottom: -16px;
+      transform: perspective( 400px ) rotateX( -45deg );
+    }
+  }
+
+  .cd-bracket{
+    height: 100px;
+    width: 156px;
+    position: absolute;
+    left: 30px;
+    box-sizing: border-box;
+    border: 8px solid $gold-bezel;
+    border-radius: 10px;
+
+    &.cd-top{
+      top: 60px;
+    }
+
+    &.cd-bottom{
+      bottom: 60px;
+    }
+  }
+
+  .cd-crown{
+    width: 20px;
+    height: 45px;
+    position: absolute;
+    top: 130px;
+    right: 0px;
+    border-radius: 5px;
+    background: $gold-bezel;
+  }
+
+  .cd-button{
+    width: 10px;
+    height: 66px;
+    position: absolute;
+    top: 205px;
+    right: 6px;
+    border-radius: 5px;
+    background: $gold-bezel;
+  }
+
+  .cd-screen{
+    position: absolute;
+    background: black;
+    overflow: hidden;
+    width: 150px;
+    height: 184px;
+    top: 105px;
+    left: 34px;
+    border-radius: 5px;
+    & > .cd-fill{
+      border-radius: 5px;
+    }
+  }
+
+  $sizes: cd-lg cd-sm cd-xs;
+  $watch-ratio: 1;
+
+  @each $size in $sizes {
+
+    @if $size == "cd-lg" {
+      $watch-ratio: 1.3;
+    }
+    @else if $size == "cd-sm" {
+      $watch-ratio: .7;
+    }
+    @else if $size == "cd-xs" {
+      $watch-ratio: .5;
+    }
+
+    /*---------  Watch #{$size} --------*/
+
+    &.#{$size}{
+      width: 228px * $watch-ratio;
+      height: 392px * $watch-ratio;
+    }
+
+    &.#{$size} > .cd-body{
+      top: 71px * $watch-ratio;
+      width: 217px * $watch-ratio;
+      height: 250px * $watch-ratio;
+      border-radius: 43px * $watch-ratio;
+      border-width: 10px * $watch-ratio;
+    }
+
+    &.#{$size} > .cd-band{
+      height: 100px * $watch-ratio;
+      width: 120px * $watch-ratio;
+      left: 48px * $watch-ratio;
+      border-radius: 5px * $watch-ratio;
+
+      &.cd-top{
+        top: -16px * $watch-ratio;
+        transform: perspective( 400px * $watch-ratio ) rotateX( 45deg );
+      }
+
+      &.cd-bottom{
+        bottom: -16px * $watch-ratio;
+        transform: perspective( 400px * $watch-ratio ) rotateX( -45deg );
+      }
+    }
+
+    &.#{$size} > .cd-bracket{
+      height: 100px * $watch-ratio;
+      width: 156px * $watch-ratio;
+      left: 30px * $watch-ratio;
+      border-width: 8px * $watch-ratio;
+      border-radius: 10px * $watch-ratio;
+
+      &.cd-top{
+        top: 60px * $watch-ratio;
+      }
+
+      &.cd-bottom{
+        bottom: 60px * $watch-ratio;
+      }
+    }
+
+    &.#{$size} > .cd-crown{
+      width: 20px * $watch-ratio;
+      height: 45px * $watch-ratio;
+      top: 130px * $watch-ratio;
+      border-radius: 5px * $watch-ratio;
+    }
+
+    &.#{$size} > .cd-button{
+      width: 10px * $watch-ratio;
+      height: 66px * $watch-ratio;
+      top: 205px * $watch-ratio;
+      right: 6px * $watch-ratio;
+      border-radius: 5px * $watch-ratio;
+    }
+
+    &.#{$size} > .cd-screen{
+      width: 150px * $watch-ratio;
+      height: 184px * $watch-ratio;
+      top: 105px * $watch-ratio;
+      left: 34px * $watch-ratio;
+      border-radius: 5px * $watch-ratio;
+      & > .cd-fill{
+        border-radius: 5px * $watch-ratio;
+      }
+    }
+  }
+
+  /*---------  Watch Colors --------*/
+  &.cd-red-band > .cd-band{
+    background: $red-band;
+  }
+  &.cd-grey-band > .cd-band{
+    background: $grey-band;
+  }
+  &.cd-navy-band > .cd-band{
+    background: $navy-band;
+  }
+  &.cd-tan-band > .cd-band{
+    background: $tan-band;
+  }
+  &.cd-brown-band > .cd-band{
+    background: $brown-band;
+  }
+  &.cd-black-band > .cd-band{
+    background: $black-band;
+  }
+
+  &.cd-gold{
+    & > .cd-body{
+      border-color: $gold-bezel;
+    }
+    & > .cd-bracket{
+      border-color: $gold-bezel;
+    }
+    & > .cd-crown{
+      background: $gold-bezel;
+    }
+    & > .cd-button{
+      background: $gold-bezel;
+    }
+  }
+
+  &.cd-rosegold{
+    & > .cd-body{
+      border-color: $rosegold-bezel;
+    }
+    & > .cd-bracket{
+      border-color: $rosegold-bezel;
+    }
+    & > .cd-crown{
+      background: $rosegold-bezel;
+    }
+    & > .cd-button{
+      background: $rosegold-bezel;
+    }
+  }
+
+  &.cd-silver{
+    & > .cd-body{
+      border-color: $silver-bezel;
+    }
+    & > .cd-bracket{
+      border-color: $silver-bezel;
+    }
+    & > .cd-crown{
+      background: $silver-bezel;
+    }
+    & > .cd-button{
+      background: $silver-bezel;
+    }
+  }
+}
+
