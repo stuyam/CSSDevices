@@ -180,6 +180,16 @@ $screen: #030303;
       border-radius: 5px * $watch-ratio;
     }
 
+    &.#{$size} > .cd-screen{
+      width: 150px * $watch-ratio;
+      height: 184px * $watch-ratio;
+      top: 105px * $watch-ratio;
+      left: 34px * $watch-ratio;
+      border-radius: 5px * $watch-ratio;
+      & > .cd-fill{
+        border-radius: 5px * $watch-ratio;
+      }
+    }
   }
 
   /*---------  Watch Colors --------*/
@@ -232,7 +242,7 @@ $screen: #030303;
     }
   }
 
-    &.cd-silver{
+  &.cd-silver{
     & > .cd-body{
       border-color: $silver-bezel;
     }
