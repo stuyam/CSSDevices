@@ -2,14 +2,17 @@
 .cd-tablet,
 .cd-laptop,
 .cd-browser,
+.cd-watch,
 .cd-mobile div,
 .cd-tablet div,
 .cd-laptop div,
 .cd-browser div,
+.cd-watch div,
 .cd-mobile div::after,
 .cd-tablet div::after,
 .cd-laptop div::after,
-.cd-browser div::after{
+.cd-browser div::after,
+.cd-watch div::after{
   margin: 0px;
   padding: 0px;
   display: block;
@@ -21,7 +24,11 @@
   margin: auto;
 }
 
-.cd-fill{
+.cd-mobile .cd-screen > *,
+.cd-tablet .cd-screen > *,
+.cd-laptop .cd-screen > *,
+.cd-browser .cd-page > *,
+.cd-watch .cd-screen > *{
   display: block;
   position: absolute;
   top: 0px;
