@@ -3,6 +3,7 @@ $aluminum-bottom: #BDBDBD;
 
 $black: #3c3d3d;
 $dark-black: #1C1C1C;
+$darkest-black: #111111;
 $ratio: 1 !global;
 
 .cd-laptop{
@@ -50,6 +51,10 @@ $ratio: 1 !global;
   border-radius: 1px;
   overflow: hidden;
   border: 2px solid $black;
+}
+
+.cd-laptop.cd-pro > .cd-screen{
+  border: 2px solid $darkest-black;
 }
 
 .cd-laptop > .cd-cam{
