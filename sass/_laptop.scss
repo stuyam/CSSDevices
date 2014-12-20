@@ -2,6 +2,7 @@ $aluminum-top: #d6d5da;
 $aluminum-bottom: #BDBDBD;
 
 $black: #3c3d3d;
+$dark-black: #1C1C1C;
 $ratio: 1 !global;
 
 .cd-laptop{
@@ -22,6 +23,10 @@ $ratio: 1 !global;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+
+.cd-laptop.cd-pro > .cd-top{
+  background: $dark-black;
 }
 
 .cd-laptop > .cd-bottom{
@@ -77,13 +82,13 @@ $sizes: cd-lg cd-sm cd-xs;
 
   @if $size == "cd-lg" {
     $ratio: 1.3;
-  } 
+  }
   @else if $size == "cd-sm" {
     $ratio: .7;
-  } 
+  }
   @else if $size == "cd-xs" {
     $ratio: .5;
-  } 
+  }
 
   /*---------  Laptop #{$size} --------*/
 
