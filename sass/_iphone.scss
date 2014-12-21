@@ -17,8 +17,6 @@ $home-btn-inner: #393839;
 $phone-black: #1e1e1e;
 $phone-white: #fafafa;
 
-$bezel: .25em;
-
 .cd-iphone-5s,
 .cd-iphone-5c,
 .cd-iphone-5s > .cd-body,
@@ -43,7 +41,6 @@ div[class*='cd-iphone']{
 
   .cd-body{
     position: relative;
-    border-width: $bezel;
     border-style: solid;
     background: $phone-black;
   }
@@ -51,6 +48,7 @@ div[class*='cd-iphone']{
   .cd-home,
   .cd-ear,
   .cd-camera,
+  .cd-camera::after,
   .cd-screen,
   .cd-sound,
   .cd-sound::after,
@@ -64,6 +62,7 @@ div[class*='cd-iphone']{
 div[class*='cd-iphone-5']{
   .cd-body{
     border-radius: 2.5em;
+    border-width: .25em;
   }
 
   .cd-camera{
@@ -109,7 +108,7 @@ div[class*='cd-iphone-5']{
 
   .cd-sound{
     top: 5.1em;
-    left: -.3em;
+    left: -.35em;
     height: 1.8em;
     width: .2em;
   }
@@ -129,7 +128,7 @@ div[class*='cd-iphone-5']{
   }
 
   .cd-sleep{
-    top: -.3em;
+    top: -.35em;
     left: 13.2em;
     height: .2em;
     width: 3em;
@@ -259,31 +258,43 @@ div[class*='cd-iphone-5']{
 div[class*='cd-iphone-6']{
   .cd-body{
     border-radius: 3em;
+    border-width: .4em;
   }
 
   .cd-camera{
     background: $camera;
-    top: 2.5em;
+    top: 2.4em;
     left: 50%;
-    margin-left: -3.5em;
+    margin-left: -4em;
+    width: .7em;
+    height: .7em;
+    border-radius: .4em;
+  }
+
+  &.cd-gold .cd-camera::after,
+  &.cd-silver .cd-camera::after{
+    content: "";
+    background: $camera;
+    top: -1.4em;
+    right: -3.5em;
     width: .5em;
     height: .5em;
-    border-radius: .25em;
+    border-radius: .3em;
   }
 
   .cd-ear{
     background: $ear;
     top: 2.5em;
     left: 50%;
-    margin-left: -1.75em;
-    width: 3.5em;
-    height: .6em;
+    margin-left: -2em;
+    width: 4em;
+    height: .5em;
     border-radius: .3em;
   }
 
   .cd-screen{
     background: black;
-    top: 5.6em;
+    top: 5em;
     left: 50%;
     margin-left: -10.5em;
     width: 21em;
@@ -293,7 +304,7 @@ div[class*='cd-iphone-6']{
   }
 
   .cd-home{
-    bottom: .7em;
+    bottom: .9em;
     left: 50%;
     margin-left: -1.75em;
     width: 3.5em;
@@ -303,8 +314,8 @@ div[class*='cd-iphone-6']{
   }
 
   .cd-sound{
-    top: 5.7em;
-    left: -.3em;
+    top: 5em;
+    left: -.5em;
     height: 1.8em;
     width: .2em;
   }
@@ -324,8 +335,8 @@ div[class*='cd-iphone-6']{
   }
 
   .cd-sleep{
-    top: 10em;
-    right: -.3em;
+    top: 9.3em;
+    right: -.5em;
     height: 3.4em;
     width: .2em;
   }
