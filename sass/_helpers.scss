@@ -8,6 +8,18 @@ div[class^='cd-']::before{
   position: relative;
 }
 
+.cd-xs{
+  font-size: .5em !important;
+}
+
+.cd-sm{
+  font-size: .7em !important;
+}
+
+.cd-lg{
+  font-size: 1.3em !important;
+}
+
 .cd-center{
   position: relative;
   margin: auto;
