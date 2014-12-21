@@ -3,10 +3,11 @@ $green-bezel: #b3f390;
 $red-bezel: #fc828d;
 $yellow-bezel: #fff38a;
 $white-bezel: #efefee;
-
 $silver-bezel: #bdbfbe;
 $gold-bezel: #ecdcc8;
-$black-bezel: #2c2b2c;
+$black-bezel: #505050;
+
+$black-home: #2c2b2c;
 
 $camera: #3c3d3d;
 $ear: #292728;
@@ -22,23 +23,25 @@ $bezel: .25em;
   border: 0;
   position: relative;
   z-index: 50;
-  width: 19.53em;
-  height: 41.266em;
+  width: 19.5em;
+  height: 42em;
+  font-size: 1em;
   display: block;
+  // overflow: hidden;
+  // background: red;
 }
 
 .cd-iphone-5s > .cd-body{
+  position: relative;
   border-radius: 2.8em;
   background: $phone-black;
-  width: 19.53em;
-  height: 41.266em;
+  width: 19.5em;
+  height: 42em;
 }
 
 /*---------  iPhone 5s --------*/
 .cd-iphone-5s .cd-body,
-.cd-iphone-5s .cd-body .cd-home,
-.cd-iphone-5s.cd-black .cd-body,
-.cd-iphone-5s.cd-black .cd-body .cd-home{
+.cd-iphone-5s.cd-black .cd-body{
   border: $bezel solid $black-bezel;
 }
 
@@ -54,27 +57,32 @@ $bezel: .25em;
   border: $bezel solid $silver-bezel;
 }
 
+.cd-iphone-5s .cd-body .cd-home,
+.cd-iphone-5s.cd-black .cd-body .cd-home{
+  border: $bezel solid $black-home;
+}
+
 /*---------  iPhone 5c --------*/
 
-.cd-5c-blue{
-  border: $bezel solid $blue-bezel;
-}
+// .cd-5c-blue{
+//   border: $bezel solid $blue-bezel;
+// }
 
-.cd-5c-green{
-  border: $bezel solid $green-bezel;
-}
+// .cd-5c-green{
+//   border: $bezel solid $green-bezel;
+// }
 
-.cd-5c-red{
-  border: $bezel solid $red-bezel;
-}
+// .cd-5c-red{
+//   border: $bezel solid $red-bezel;
+// }
 
-.cd-5c-yellow{
-  border: $bezel solid $yellow-bezel;
-}
+// .cd-5c-yellow{
+//   border: $bezel solid $yellow-bezel;
+// }
 
-.cd-5c-white{
-  border: $bezel solid $white-bezel;
-}
+// .cd-5c-white{
+//   border: $bezel solid $white-bezel;
+// }
 
 /*---------  iPhone Parts --------*/
 div[class*='cd-iphone']{
@@ -86,6 +94,7 @@ div[class*='cd-iphone']{
     position: relative;
     margin: auto;
     overflow: hidden;
+    z-index: 49;
   }
 
 }
@@ -93,15 +102,15 @@ div[class*='cd-iphone']{
 /*---------  iPhone5s & iPhone5c Parts --------*/
 div[class*='cd-iphone-5']{
 
-  & .cd-ear{
+  .cd-ear{
     background: $ear;
     margin-top: 1em;
-    width: 4em;
+    width: 3.5em;
     height: .6em;
     border-radius: .3em;
   }
 
-  & .cd-camera{
+  .cd-camera{
     background: $camera;
     margin-top: 1.5em;
     width: .5em;
@@ -109,21 +118,62 @@ div[class*='cd-iphone-5']{
     border-radius: .25em;
   }
 
-  & .cd-screen{
+  .cd-screen{
     background: black;
     margin-top: 1.5em;
-    width: 18em;
-    height: 30em;
+    width: 17.6em;
+    height: 31em;
     border: solid $bezel black;
     border-radius: .1em;
   }
 
-  & .cd-home{
-    margin-top: 1em;
+  .cd-home{
+    margin-top: .6em;
     width: 4em;
     height: 4em;
     border-radius: 2em;
   }
+
+  .cd-sound{
+    position: absolute;
+    top: 5.1em;
+    left: -.3em;
+    background: $black-bezel;
+    height: 1.8em;
+    width: .2em;
+    z-index: 4;
+  }
+
+  .cd-sound::before{
+    position: absolute;
+    content: "";
+    top: 4em;
+    background: $black-bezel;
+    height: 1.4em;
+    width: .2em;
+    z-index: 4;
+  }
+
+  .cd-sound::after{
+    position: absolute;
+    content: "";
+    top: 7.2em;
+    background: $black-bezel;
+    height: 1.4em;
+    width: .2em;
+    z-index: 4;
+  }
+
+  .cd-sleep{
+    position: absolute;
+    top: -.3em;
+    left: 13.2em;
+    background: $black-bezel;
+    height: .2em;
+    width: 3em;
+    z-index: 4;
+  }
+
 
 }
 // .cd-mobile > .cd-ear{
@@ -147,13 +197,13 @@ div[class*='cd-iphone-5']{
 .cd-5c-red > .cd-home::after,
 .cd-5c-yellow > .cd-home::after,
 .cd-5c-white > .cd-home::after{
-    content: "";
-    display:block;
-	width:15px;
-	height:15px;
-	margin: 18px;
-	border-radius:4px;
-	border:2px solid $home-btn-inner;
+  content: "";
+  display:block;
+  width:15px;
+  height:15px;
+  margin: 18px;
+  border-radius:4px;
+  border:2px solid $home-btn-inner;
 }
 
 // .cd-mobile > .cd-home,
@@ -192,10 +242,10 @@ div[class*='cd-iphone-5']{
 .cd-5s-gold > .cd-home,
 .cd-5s-silver > .cd-home,
 .cd-5s-black > .cd-home{
-	bottom: 12px;
-	width: 50px;
-	height: 50px;
-	margin-left: -30px;
+  bottom: 12px;
+  width: 50px;
+  height: 50px;
+  margin-left: -30px;
 }
 
 .cd-mobile > .cd-screen{
