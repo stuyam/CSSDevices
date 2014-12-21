@@ -94,7 +94,6 @@ div[class*='cd-iphone-5']{
     position: absolute;
     top: 5.1em;
     left: -.3em;
-    background: $black-bezel;
     height: 1.8em;
     width: .2em;
     z-index: 4;
@@ -132,43 +131,78 @@ div[class*='cd-iphone-5']{
 
   .cd-home{
     background: $home-btn;
+    border-width: 0 !important;
   }
 
-  // .cd-home::after{
-  //   content: "";
-  //   display:block;
-  //   width:15px;
-  //   height:15px;
-  //   margin: 18px;
-  //   border-radius:4px;
-  //   border:2px solid $home-btn-inner;
-  // }
+  .cd-home::after{
+    content: "";
+    display:block;
+    width: 1.2em;
+    height: 1.2em;
+    margin: 1.4em auto;
+    border-radius: .3em;
+    border: 1px solid $home-btn-inner;
+  }
 
-  &.cd-blue{
+  .cd-body{
     border: $bezel solid $blue-bezel;
   }
 
-  &.cd-green{
+  &.cd-green .cd-body{
     border: $bezel solid $green-bezel;
   }
 
-  &.cd-red{
+  &.cd-red .cd-body{
     border: $bezel solid $red-bezel;
   }
 
-  &.cd-yellow{
+  &.cd-yellow .cd-body{
     border: $bezel solid $yellow-bezel;
   }
 
-  &.cd-white{
+  &.cd-white .cd-body{
     border: $bezel solid $white-bezel;
+  }
+
+  .cd-sound,
+  .cd-sound::before,
+  .cd-sound::after,
+  .cd-sleep{
+    background: $blue-bezel;
+  }
+
+  &.cd-green .cd-sound,
+  &.cd-green .cd-sound::before,
+  &.cd-green .cd-sound::after,
+  &.cd-green .cd-sleep{
+    background: $green-bezel;
+  }
+
+  &.cd-red .cd-sound,
+  &.cd-red .cd-sound::before,
+  &.cd-red .cd-sound::after,
+  &.cd-red .cd-sleep{
+    background: $red-bezel;
+  }
+
+  &.cd-yellow .cd-sound,
+  &.cd-yellow .cd-sound::before,
+  &.cd-yellow .cd-sound::after,
+  &.cd-yellow .cd-sleep{
+    background: $yellow-bezel;
+  }
+
+  &.cd-white .cd-sound,
+  &.cd-white .cd-sound::before,
+  &.cd-white .cd-sound::after,
+  &.cd-white .cd-sleep{
+    background: $white-bezel;
   }
 }
 
 /*---------  iPhone 5s Coloring --------*/
 .cd-iphone-5s{
-  .cd-body,
-  &.cd-black .cd-body{
+  .cd-body{
     border-color: $black-bezel;
   }
 
@@ -184,8 +218,7 @@ div[class*='cd-iphone-5']{
     border-color: $silver-bezel;
   }
 
-  .cd-body .cd-home,
-  &.cd-black .cd-body .cd-home{
+  .cd-body .cd-home{
     border-color: $black-home;
   }
 
