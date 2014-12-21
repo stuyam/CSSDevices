@@ -24,12 +24,10 @@ $bezel: .25em;
   border: 0;
   position: relative;
   z-index: 50;
-  width: 19.5em;
+  width: 19.8em;
   height: 42em;
   font-size: 1em;
   display: block;
-  // overflow: hidden;
-  // background: red;
 }
 
 .cd-iphone-5s > .cd-body,
@@ -38,7 +36,7 @@ $bezel: .25em;
   border-radius: 2.5em;
   border: $bezel solid black;
   background: $phone-black;
-  width: 19.5em;
+  width: 19.8em;
   height: 42em;
 }
 
@@ -54,34 +52,33 @@ div[class*='cd-iphone']{
     overflow: hidden;
     z-index: 49;
   }
-
 }
 
 /*---------  iPhone5s & iPhone5c Parts --------*/
 div[class*='cd-iphone-5']{
 
-  .cd-ear{
-    background: $ear;
-    margin-top: 1em;
-    width: 3.5em;
-    height: .6em;
-    border-radius: .3em;
-  }
-
   .cd-camera{
     background: $camera;
-    margin-top: 1.5em;
+    margin-top: 1.7em;
     width: .5em;
     height: .5em;
     border-radius: .25em;
   }
 
+  .cd-ear{
+    background: $ear;
+    margin-top: .8em;
+    width: 3.5em;
+    height: .6em;
+    border-radius: .3em;
+  }
+
   .cd-screen{
     background: black;
     margin-top: 1.5em;
-    width: 17.6em;
+    width: 17.8em;
     height: 31em;
-    border: solid $bezel black;
+    border: solid .2em black;
     border-radius: .1em;
   }
 
@@ -213,135 +210,3 @@ div[class*='cd-iphone-5']{
     background: $silver-bezel;
   }
 }
-// .cd-mobile > .cd-home,
-// .cd-mobile > .cd-ear,
-// .cd-mobile > .cd-cam,
-// .cd-mobile > .cd-screen{
-//   position: absolute;
-//   left: 50%;
-//   overflow: hidden;
-// }
-
-// .cd-mobile > .cd-cam{
-//   top: 23px;
-//   width: 8px;
-//   height: 8px;
-//   border-radius: 50%;
-//   margin-left: -4px;
-// }
-
-// .cd-mobile > .cd-ear{
-//   top: 43px;
-//   width: 54px;
-//   height: 8px;
-//   border-radius: 5px;
-//   margin-left: -27px;
-// }
-
-// .cd-mobile > .cd-home{
-//   bottom: 14px;
-//   width: 54px;
-//   height: 54px;
-//   border-radius: 50%;
-//   margin-left: -27px;
-// }
-
-// .cd-5s-gold > .cd-home,
-// .cd-5s-silver > .cd-home,
-// .cd-5s-black > .cd-home{
-//   bottom: 12px;
-//   width: 50px;
-//   height: 50px;
-//   margin-left: -30px;
-// }
-
-// .cd-mobile > .cd-screen{
-//   background: black;
-//   width: 250px;
-//   margin-left: -127px;
-//   height: 440px;
-//   top: 75px;
-//   border: solid $bezel black;
-//   border-radius: 2px;
-// }
-
-// $sizes: cd-lg cd-sm cd-xs;
-
-// @each $size in $sizes {
-
-// 	@if $size == "cd-lg" {
-// 		$ratio: 1.3;
-// 	}
-// 	@else if $size == "cd-sm" {
-// 		$ratio: .7;
-// 	}
-// 	@else if $size == "cd-xs" {
-// 		$ratio: .5;
-// 	}
-
-// 	/*---------  iPhone #{$size} --------*/
-
-//   .cd-mobile.#{$size}{
-// 	  width: 280px * $ratio;
-// 	  height: 600px * $ratio;
-// 	  border-radius: 35px * $ratio;
-// 	  border-width: $bezel * $ratio;
-// 	}
-
-// 	.cd-mobile.#{$size} > .cd-cam{
-// 	  top: 23px * $ratio;
-// 	  width: 8px * $ratio;
-// 	  height: 8px * $ratio;
-// 	  margin-left: -4px * $ratio;
-// 	}
-
-// 	.cd-mobile.#{$size} > .cd-ear{
-// 	  top: 43px * $ratio;
-// 	  width: 54px * $ratio;
-// 	  height: 8px * $ratio;
-// 	  border-radius: 5px * $ratio;
-// 	  margin-left: -27px * $ratio;
-// 	}
-
-// 	.cd-mobile.#{$size} > .cd-home{
-// 	  bottom: 14px * $ratio;
-// 	  width: 54px * $ratio;
-// 	  height: 54px * $ratio;
-// 	  margin-left: -27px * $ratio;
-// 	}
-
-// 	.cd-mobile.#{$size}.cd-5s-gold > .cd-home,
-// 	.cd-mobile.#{$size}.cd-5s-silver > .cd-home,
-// 	.cd-mobile.#{$size}.cd-5s-black > .cd-home{
-// 		bottom: 12px * $ratio;
-// 		width: 50px * $ratio;
-// 		height: 50px * $ratio;
-// 		margin-left: -30px * $ratio;
-// 		border-width: $bezel * $ratio;
-// 	}
-
-// 	.cd-5c-blue.#{$size} > .cd-home::after,
-// 	.cd-5c-green.#{$size} > .cd-home::after,
-// 	.cd-5c-red.#{$size} > .cd-home::after,
-// 	.cd-5c-yellow.#{$size} > .cd-home::after,
-// 	.cd-5c-white.#{$size} > .cd-home::after{
-// 		width:15px * $ratio;
-// 		height:15px * $ratio;
-// 		margin: 18px * $ratio;
-// 		border-radius:4px * $ratio;
-// 		border:2px * $ratio solid $home-btn-inner;
-// 	}
-
-// 	.cd-mobile.#{$size} > .cd-screen{
-// 	  width: 250px * $ratio;
-// 	  margin-left: -127px * $ratio;
-// 	  height: 440px * $ratio;
-// 	  top: 75px * $ratio;
-// 	  border: solid $bezel * $ratio black;
-// 	  border-radius: 2px * $ratio;
-// 	}
-// }
-
-
-
-
