@@ -19,7 +19,8 @@ $phone-white: #fafafa;
 
 $bezel: .25em;
 
-.cd-iphone-5s{
+.cd-iphone-5s,
+.cd-iphone-5c{
   border: 0;
   position: relative;
   z-index: 50;
@@ -31,58 +32,15 @@ $bezel: .25em;
   // background: red;
 }
 
-.cd-iphone-5s > .cd-body{
+.cd-iphone-5s > .cd-body,
+.cd-iphone-5c > .cd-body{
   position: relative;
-  border-radius: 2.8em;
+  border-radius: 2.5em;
+  border: $bezel solid black;
   background: $phone-black;
   width: 19.5em;
   height: 42em;
 }
-
-/*---------  iPhone 5s --------*/
-.cd-iphone-5s .cd-body,
-.cd-iphone-5s.cd-black .cd-body{
-  border: $bezel solid $black-bezel;
-}
-
-.cd-iphone-5s.cd-gold .cd-body,
-.cd-iphone-5s.cd-gold .cd-body .cd-home{
-  background-color: $phone-white;
-  border: $bezel solid $gold-bezel;
-}
-
-.cd-iphone-5s.cd-silver .cd-body,
-.cd-iphone-5s.cd-silver .cd-body .cd-home{
-  background-color: $phone-white;
-  border: $bezel solid $silver-bezel;
-}
-
-.cd-iphone-5s .cd-body .cd-home,
-.cd-iphone-5s.cd-black .cd-body .cd-home{
-  border: $bezel solid $black-home;
-}
-
-/*---------  iPhone 5c --------*/
-
-// .cd-5c-blue{
-//   border: $bezel solid $blue-bezel;
-// }
-
-// .cd-5c-green{
-//   border: $bezel solid $green-bezel;
-// }
-
-// .cd-5c-red{
-//   border: $bezel solid $red-bezel;
-// }
-
-// .cd-5c-yellow{
-//   border: $bezel solid $yellow-bezel;
-// }
-
-// .cd-5c-white{
-//   border: $bezel solid $white-bezel;
-// }
 
 /*---------  iPhone Parts --------*/
 div[class*='cd-iphone']{
@@ -128,10 +86,11 @@ div[class*='cd-iphone-5']{
   }
 
   .cd-home{
-    margin-top: .6em;
+    margin-top: .7em;
     width: 4em;
     height: 4em;
     border-radius: 2em;
+    border: .2em solid black;
   }
 
   .cd-sound{
@@ -148,7 +107,6 @@ div[class*='cd-iphone-5']{
     position: absolute;
     content: "";
     top: 4em;
-    background: $black-bezel;
     height: 1.4em;
     width: .2em;
     z-index: 4;
@@ -158,7 +116,6 @@ div[class*='cd-iphone-5']{
     position: absolute;
     content: "";
     top: 7.2em;
-    background: $black-bezel;
     height: 1.4em;
     width: .2em;
     z-index: 4;
@@ -168,44 +125,94 @@ div[class*='cd-iphone-5']{
     position: absolute;
     top: -.3em;
     left: 13.2em;
-    background: $black-bezel;
     height: .2em;
     width: 3em;
     z-index: 4;
   }
-
-
-}
-// .cd-mobile > .cd-ear{
-// 	background: $ear;
-// }
-
-// .cd-mobile > .cd-cam{
-// 	background: $cam;
-// }
-
-.cd-5c-blue > .cd-home,
-.cd-5c-green > .cd-home,
-.cd-5c-red > .cd-home,
-.cd-5c-yellow > .cd-home,
-.cd-5c-white > .cd-home{
-  background: $home-btn;
 }
 
-.cd-5c-blue > .cd-home::after,
-.cd-5c-green > .cd-home::after,
-.cd-5c-red > .cd-home::after,
-.cd-5c-yellow > .cd-home::after,
-.cd-5c-white > .cd-home::after{
-  content: "";
-  display:block;
-  width:15px;
-  height:15px;
-  margin: 18px;
-  border-radius:4px;
-  border:2px solid $home-btn-inner;
+.cd-iphone-5c{
+
+  .cd-home{
+    background: $home-btn;
+  }
+
+  // .cd-home::after{
+  //   content: "";
+  //   display:block;
+  //   width:15px;
+  //   height:15px;
+  //   margin: 18px;
+  //   border-radius:4px;
+  //   border:2px solid $home-btn-inner;
+  // }
+
+  &.cd-blue{
+    border: $bezel solid $blue-bezel;
+  }
+
+  &.cd-green{
+    border: $bezel solid $green-bezel;
+  }
+
+  &.cd-red{
+    border: $bezel solid $red-bezel;
+  }
+
+  &.cd-yellow{
+    border: $bezel solid $yellow-bezel;
+  }
+
+  &.cd-white{
+    border: $bezel solid $white-bezel;
+  }
 }
 
+/*---------  iPhone 5s Coloring --------*/
+.cd-iphone-5s{
+  .cd-body,
+  &.cd-black .cd-body{
+    border-color: $black-bezel;
+  }
+
+  &.cd-gold .cd-body,
+  &.cd-gold .cd-body .cd-home{
+    background-color: $phone-white;
+    border-color: $gold-bezel;
+  }
+
+  &.cd-silver .cd-body,
+  &.cd-silver .cd-body .cd-home{
+    background-color: $phone-white;
+    border-color: $silver-bezel;
+  }
+
+  .cd-body .cd-home,
+  &.cd-black .cd-body .cd-home{
+    border-color: $black-home;
+  }
+
+  .cd-sound,
+  .cd-sound::before,
+  .cd-sound::after,
+  .cd-sleep{
+    background: $black-bezel;
+  }
+
+  &.cd-gold .cd-sound,
+  &.cd-gold .cd-sound::before,
+  &.cd-gold .cd-sound::after,
+  &.cd-gold .cd-sleep{
+    background: $gold-bezel;
+  }
+
+  &.cd-silver .cd-sound,
+  &.cd-silver .cd-sound::before,
+  &.cd-silver .cd-sound::after,
+  &.cd-silver .cd-sleep{
+    background: $silver-bezel;
+  }
+}
 // .cd-mobile > .cd-home,
 // .cd-mobile > .cd-ear,
 // .cd-mobile > .cd-cam,
@@ -215,48 +222,48 @@ div[class*='cd-iphone-5']{
 //   overflow: hidden;
 // }
 
-.cd-mobile > .cd-cam{
-  top: 23px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-left: -4px;
-}
+// .cd-mobile > .cd-cam{
+//   top: 23px;
+//   width: 8px;
+//   height: 8px;
+//   border-radius: 50%;
+//   margin-left: -4px;
+// }
 
-.cd-mobile > .cd-ear{
-  top: 43px;
-  width: 54px;
-  height: 8px;
-  border-radius: 5px;
-  margin-left: -27px;
-}
+// .cd-mobile > .cd-ear{
+//   top: 43px;
+//   width: 54px;
+//   height: 8px;
+//   border-radius: 5px;
+//   margin-left: -27px;
+// }
 
-.cd-mobile > .cd-home{
-  bottom: 14px;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  margin-left: -27px;
-}
+// .cd-mobile > .cd-home{
+//   bottom: 14px;
+//   width: 54px;
+//   height: 54px;
+//   border-radius: 50%;
+//   margin-left: -27px;
+// }
 
-.cd-5s-gold > .cd-home,
-.cd-5s-silver > .cd-home,
-.cd-5s-black > .cd-home{
-  bottom: 12px;
-  width: 50px;
-  height: 50px;
-  margin-left: -30px;
-}
+// .cd-5s-gold > .cd-home,
+// .cd-5s-silver > .cd-home,
+// .cd-5s-black > .cd-home{
+//   bottom: 12px;
+//   width: 50px;
+//   height: 50px;
+//   margin-left: -30px;
+// }
 
-.cd-mobile > .cd-screen{
-  background: black;
-  width: 250px;
-  margin-left: -127px;
-  height: 440px;
-  top: 75px;
-  border: solid $bezel black;
-  border-radius: 2px;
-}
+// .cd-mobile > .cd-screen{
+//   background: black;
+//   width: 250px;
+//   margin-left: -127px;
+//   height: 440px;
+//   top: 75px;
+//   border: solid $bezel black;
+//   border-radius: 2px;
+// }
 
 // $sizes: cd-lg cd-sm cd-xs;
 
