@@ -39,14 +39,14 @@
   height: 100%;
 }
 
-.cd-rotate-right.cd-iphone-5s{
-  background: green;
+.cd-rotate-left.cd-iphone-5s{
+  // background: green;
   // display: table;
   height: 19.5em;
   width: 42em;
 }
 
-.cd-rotate-right > .cd-body{
+.cd-rotate-left > .cd-body{
   transform: rotate(-90deg) translate(-100%,0);
   transform-origin:0 0;
 }
