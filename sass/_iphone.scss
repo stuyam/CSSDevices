@@ -20,46 +20,57 @@ $phone-white: #fafafa;
 $bezel: .25em;
 
 .cd-iphone-5s,
-.cd-iphone-5c{
-  border: 0;
-  position: relative;
-  z-index: 50;
-  width: 19.8em;
-  height: 42em;
-  font-size: 1em;
-  display: block;
-}
-
+.cd-iphone-5c,
 .cd-iphone-5s > .cd-body,
 .cd-iphone-5c > .cd-body{
-  position: relative;
-  border-radius: 2.5em;
-  border: $bezel solid black;
-  background: $phone-black;
   width: 19.8em;
   height: 42em;
+}
+
+.cd-iphone-6,
+.cd-iphone-6 > .cd-body{
+  width: 23em;
+  height: 48em;
 }
 
 /*---------  iPhone Parts --------*/
 div[class*='cd-iphone']{
+  border: 0;
+  position: relative;
+  z-index: 50;
+  font-size: 14px;
+  display: block;
 
-  & .cd-home,
-  & .cd-ear,
-  & .cd-camera,
-  & .cd-screen{
+  .cd-body{
     position: relative;
-    margin: auto;
-    overflow: hidden;
-    z-index: 49;
+    border-width: $bezel;
+    border-style: solid;
+    background: $phone-black;
+  }
+
+  .cd-home,
+  .cd-ear,
+  .cd-camera,
+  .cd-screen,
+  .cd-sound,
+  .cd-sound::after,
+  .cd-sound::before,
+  .cd-sleep{
+    position: absolute;
   }
 }
 
 /*---------  iPhone5s & iPhone5c Parts --------*/
 div[class*='cd-iphone-5']{
+  .cd-body{
+    border-radius: 2.5em;
+  }
 
   .cd-camera{
     background: $camera;
-    margin-top: 1.7em;
+    top: 1.7em;
+    left: 50%;
+    margin-left: -.25em;
     width: .5em;
     height: .5em;
     border-radius: .25em;
@@ -67,7 +78,9 @@ div[class*='cd-iphone-5']{
 
   .cd-ear{
     background: $ear;
-    margin-top: .8em;
+    top: 3em;
+    left: 50%;
+    margin-left: -1.75em;
     width: 3.5em;
     height: .6em;
     border-radius: .3em;
@@ -75,7 +88,9 @@ div[class*='cd-iphone-5']{
 
   .cd-screen{
     background: black;
-    margin-top: 1.5em;
+    top: 5em;
+    left: 50%;
+    margin-left: -8.9em;
     width: 17.8em;
     height: 31em;
     border: solid .2em black;
@@ -83,47 +98,41 @@ div[class*='cd-iphone-5']{
   }
 
   .cd-home{
-    margin-top: .7em;
-    width: 4em;
-    height: 4em;
-    border-radius: 2em;
+    bottom: 1em;
+    left: 50%;
+    margin-left: -1.75em;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 1.75em;
     border: .2em solid black;
   }
 
   .cd-sound{
-    position: absolute;
     top: 5.1em;
     left: -.3em;
     height: 1.8em;
     width: .2em;
-    z-index: 4;
   }
 
   .cd-sound::before{
-    position: absolute;
     content: "";
     top: 4em;
     height: 1.4em;
     width: .2em;
-    z-index: 4;
   }
 
   .cd-sound::after{
-    position: absolute;
     content: "";
     top: 7.2em;
     height: 1.4em;
     width: .2em;
-    z-index: 4;
   }
 
   .cd-sleep{
-    position: absolute;
     top: -.3em;
     left: 13.2em;
     height: .2em;
     width: 3em;
-    z-index: 4;
   }
 }
 
@@ -139,29 +148,29 @@ div[class*='cd-iphone-5']{
     display:block;
     width: 1.2em;
     height: 1.2em;
-    margin: 1.4em auto;
+    margin: 1.15em auto;
     border-radius: .3em;
     border: 1px solid $home-btn-inner;
   }
 
   .cd-body{
-    border: $bezel solid $blue-bezel;
+    border-color: $blue-bezel;
   }
 
   &.cd-green .cd-body{
-    border: $bezel solid $green-bezel;
+    border-color: $green-bezel;
   }
 
   &.cd-red .cd-body{
-    border: $bezel solid $red-bezel;
+    border-color: $red-bezel;
   }
 
   &.cd-yellow .cd-body{
-    border: $bezel solid $yellow-bezel;
+    border-color: $yellow-bezel;
   }
 
   &.cd-white .cd-body{
-    border: $bezel solid $white-bezel;
+    border-color: $white-bezel;
   }
 
   .cd-sound,
@@ -200,8 +209,10 @@ div[class*='cd-iphone-5']{
   }
 }
 
-/*---------  iPhone 5s Coloring --------*/
-.cd-iphone-5s{
+/*---------  iPhone5s & iPhone6 & iPhone6 Plus Coloring --------*/
+.cd-iphone-5s,
+.cd-iphone-6,
+.cd-iphone-6-plus{
   .cd-body{
     border-color: $black-bezel;
   }
@@ -241,5 +252,81 @@ div[class*='cd-iphone-5']{
   &.cd-silver .cd-sound::after,
   &.cd-silver .cd-sleep{
     background: $silver-bezel;
+  }
+}
+
+/*---------  iPhone6 & iPhone6 Plus Parts --------*/
+div[class*='cd-iphone-6']{
+  .cd-body{
+    border-radius: 3em;
+  }
+
+  .cd-camera{
+    background: $camera;
+    top: 2.5em;
+    left: 50%;
+    margin-left: -3.5em;
+    width: .5em;
+    height: .5em;
+    border-radius: .25em;
+  }
+
+  .cd-ear{
+    background: $ear;
+    top: 2.5em;
+    left: 50%;
+    margin-left: -1.75em;
+    width: 3.5em;
+    height: .6em;
+    border-radius: .3em;
+  }
+
+  .cd-screen{
+    background: black;
+    top: 5.6em;
+    left: 50%;
+    margin-left: -10.5em;
+    width: 21em;
+    height: 37em;
+    border: solid .2em black;
+    border-radius: .1em;
+  }
+
+  .cd-home{
+    bottom: .7em;
+    left: 50%;
+    margin-left: -1.75em;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 1.75em;
+    border: .2em solid black;
+  }
+
+  .cd-sound{
+    top: 5.7em;
+    left: -.3em;
+    height: 1.8em;
+    width: .2em;
+  }
+
+  .cd-sound::before{
+    content: "";
+    top: 4.4em;
+    height: 3.4em;
+    width: .2em;
+  }
+
+  .cd-sound::after{
+    content: "";
+    top: 8.8em;
+    height: 3.4em;
+    width: .2em;
+  }
+
+  .cd-sleep{
+    top: 10em;
+    right: -.3em;
+    height: 3.4em;
+    width: .2em;
   }
 }
