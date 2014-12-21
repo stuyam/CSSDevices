@@ -17,6 +17,7 @@
   padding: 0px;
   display: block;
   box-sizing: content-box;
+  position: relative;
 }
 
 .cd-center{
@@ -38,3 +39,24 @@
   width: 100%;
   height: 100%;
 }
+
+.cd-rotate-right-xs-mobile{
+  overflow: hidden;
+  background: green;
+  // display: table;
+  height: 285px;
+  width: 606px;
+}
+
+div[class*='cd-rotate-right-'] > *{
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg) translate(-100%,0);
+  transform-origin:0 0;
+}
+
+div[class*='cd-rotate-right-'] > *:after {
+     content: "";
+     float: left;
+     padding-top: 100%;
+ }
