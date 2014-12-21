@@ -3,6 +3,9 @@
 .cd-laptop,
 .cd-browser,
 .cd-watch,
+.cd-iphone-5s,
+.cd-iphone-5s div,
+.cd-iphone-5s div::after,
 .cd-mobile div,
 .cd-tablet div,
 .cd-laptop div,
@@ -16,7 +19,7 @@
   margin: 0px;
   padding: 0px;
   display: block;
-  box-sizing: content-box;
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -25,11 +28,7 @@
   margin: auto;
 }
 
-.cd-mobile .cd-screen > *,
-.cd-tablet .cd-screen > *,
-.cd-laptop .cd-screen > *,
-.cd-browser .cd-page > *,
-.cd-watch .cd-screen > *{
+.cd-screen > *{
   display: block;
   position: absolute;
   top: 0px;
@@ -40,23 +39,21 @@
   height: 100%;
 }
 
-.cd-rotate-right-xs-mobile{
+.cd-rotate-right.cd-iphone-5s{
   overflow: hidden;
   background: green;
   // display: table;
-  height: 285px;
-  width: 606px;
+  height: 19.53em;
+  width: 41.266em;
 }
 
-div[class*='cd-rotate-right-'] > *{
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+.cd-rotate-right > .cd-body{
   transform: rotate(-90deg) translate(-100%,0);
   transform-origin:0 0;
 }
 
-div[class*='cd-rotate-right-'] > *:after {
-     content: "";
-     float: left;
-     padding-top: 100%;
- }
+// div[class*='cd-rotate-right'] > *:after {
+//      content: "";
+//      float: left;
+//      padding-top: 100%;
+//  }
