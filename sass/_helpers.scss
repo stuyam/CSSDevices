@@ -39,10 +39,12 @@
   height: 100%;
 }
 
-.cd-rotate-left.cd-iphone-5s{
-  // background: green;
-  // display: table;
-  height: 19.5em;
+.cd-rotate-left.cd-iphone-5s,
+.cd-rotate-left.cd-iphone-5c,
+.cd-rotate-right.cd-iphone-5s,
+.cd-rotate-right.cd-iphone-5c{
+  // background: red;
+  height: 19.8em;
   width: 42em;
 }
 
@@ -51,15 +53,7 @@
   transform-origin:0 0;
 }
 
-// .cd-rotate-right .cd-screen{
-//   transform: rotate(90deg);
-//   transform-origin:50% 50%;
-//   width: 30em;
-//   height: 18em;
-// }
-
-// div[class*='cd-rotate-right'] > *:after {
-//      content: "";
-//      float: left;
-//      padding-top: 100%;
-//  }
+.cd-rotate-right > .cd-body{
+  transform: rotate(90deg) translate(0, -100%);
+  transform-origin:0 0;
+}
