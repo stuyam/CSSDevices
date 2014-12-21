@@ -52,6 +52,13 @@
   transform-origin:0 0;
 }
 
+.cd-rotate-right .cd-screen{
+  transform: rotate(90deg);
+  transform-origin:50% 50%;
+  width: 30em;
+  height: 18em;
+}
+
 // div[class*='cd-rotate-right'] > *:after {
 //      content: "";
 //      float: left;
