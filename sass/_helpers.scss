@@ -38,21 +38,83 @@ div[class^='cd-']::before{
   color: white;
 }
 
+// .cd-screen.cd-slideshow > *:nth-child(n+2){
+//   display: none;
+// }
+
 .cd-rotate-left.cd-iphone-5s,
 .cd-rotate-left.cd-iphone-5c,
 .cd-rotate-right.cd-iphone-5s,
 .cd-rotate-right.cd-iphone-5c{
-  // background: red;
-  height: 19.8em;
-  width: 42em;
+  height: map-get($iphone5, width);
+  width: map-get($iphone5, height);
 }
 
-.cd-rotate-left > .cd-body{
-  transform: rotate(-90deg) translate(-100%,0);
-  transform-origin:0 0;
+.cd-rotate-left.cd-iphone-6,
+.cd-rotate-right.cd-iphone-6{
+  height: map-get($iphone6, width);
+  width: map-get($iphone6, height);
 }
 
-.cd-rotate-right > .cd-body{
-  transform: rotate(90deg) translate(0, -100%);
-  transform-origin:0 0;
+.cd-rotate-left.cd-iphone-6-plus,
+.cd-rotate-right.cd-iphone-6-plus{
+  height: map-get($iphone6-plus, width);
+  width: map-get($iphone6-plus, height);
+}
+
+.cd-rotate-left{
+  & > .cd-body{
+    transform: rotate(-90deg) translate(-100%,0);
+    transform-origin:0 0;
+    & > .cd-screen{
+      transform: rotate(90deg) translate(0, -100%);
+      transform-origin:0 0;
+    }
+  }
+  &:not(.cd-rotate-fixed-screen){
+    &.cd-iphone-5s > .cd-body > .cd-screen,
+    &.cd-iphone-5c > .cd-body > .cd-screen{
+      height: map-get($iphone5, screen-width);
+      width: map-get($iphone5, screen-height);
+    }
+    &.cd-iphone-6 > .cd-body > .cd-screen{
+      height: map-get($iphone6, screen-width);
+      width: map-get($iphone6, screen-height);
+    }
+    &.cd-iphone-6-plus > .cd-body > .cd-screen{
+      height: map-get($iphone6-plus, screen-width);
+      width: map-get($iphone6-plus, screen-height);
+    }
+  }
+}
+
+.cd-rotate-right{
+  & > .cd-body{
+    transform: rotate(90deg) translate(0, -100%);
+    transform-origin:0 0;
+    & > .cd-screen{
+      transform: rotate(-90deg) translate(-100%, 0);
+      transform-origin:0 0;
+    }
+  }
+  &:not(.cd-rotate-fixed-screen){
+    &.cd-iphone-5s > .cd-body > .cd-screen,
+    &.cd-iphone-5c > .cd-body > .cd-screen{
+      height: map-get($iphone5, screen-width);
+      width: map-get($iphone5, screen-height);
+    }
+    &.cd-iphone-6 > .cd-body > .cd-screen{
+      height: map-get($iphone6, screen-width);
+      width: map-get($iphone6, screen-height);
+    }
+    &.cd-iphone-6-plus > .cd-body > .cd-screen{
+      height: map-get($iphone6-plus, screen-width);
+      width: map-get($iphone6-plus, screen-height);
+    }
+  }
+}
+
+.cd-rotate-fixed-screen > .cd-body > .cd-screen{
+  transform: none;
+  transform-origin: none;
 }
