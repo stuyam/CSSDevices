@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="devices.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
 
 <style type="text/css">
   body{
@@ -39,18 +39,42 @@
   </div>
 </div> -->
 
-<div class="cd-iphone-5s">
+<div class="cd-iphone-6 cd-xs">
   <div class="cd-body">
     <div class="cd-sound"></div>
     <div class="cd-sleep"></div>
     <div class="cd-camera"></div>
     <div class="cd-ear"></div>
-    <div class="cd-screen">
-      <img class="cd-fill" src="http://cdn.osxdaily.com/wp-content/uploads/2013/06/iphone-5-home-screen-ios-7.jpg">
+    <div class="cd-screen cd-slideshow">
+      <img src="http://icdn3.digitaltrends.com/image/iphone-6s-plus-screenshot-6-1125x2001.jpg?ver=1">
+      <img src="http://icdn2.digitaltrends.com/image/iphone-6s-plus-screenshot-12-1125x2001.jpg?ver=2">
+      <!-- <img src="http://static6.businessinsider.com/image/541c6d7c69beddf15a1753ff-1200-706/img_3148.png"> -->
+      <img src="http://cdn.osxdaily.com/wp-content/uploads/2013/06/iphone-5-home-screen-ios-7.jpg">
     </div>
     <div class="cd-home"></div>
   </div>
 </div>
+
+<div class="cd-iphone-6 cd-xs">
+  <div class="cd-body">
+    <div class="cd-sound"></div>
+    <div class="cd-sleep"></div>
+    <div class="cd-camera"></div>
+    <div class="cd-ear"></div>
+    <div class="cd-screen cd-slideshow" data-page-speed="4000" data-fade-speed="2000">
+      <img src="http://icdn3.digitaltrends.com/image/iphone-6s-plus-screenshot-6-1125x2001.jpg?ver=1">
+      <img src="http://icdn2.digitaltrends.com/image/iphone-6s-plus-screenshot-12-1125x2001.jpg?ver=2">
+      <!-- <img src="http://static6.businessinsider.com/image/541c6d7c69beddf15a1753ff-1200-706/img_3148.png"> -->
+      <img src="http://cdn.osxdaily.com/wp-content/uploads/2013/06/iphone-5-home-screen-ios-7.jpg">
+      <div>
+      HOLY SHOOT THIS IS AMAZING!!!!!!
+      </div>
+    </div>
+    <div class="cd-home"></div>
+  </div>
+</div>
+
+
 
 <!-- <div class="cd-tablet cd-black">
   <div class="cd-cam"></div>
@@ -61,7 +85,7 @@
   </div>
 </div> -->
 
-<div class="cd-rotate-right">
+<!-- <div class="cd-rotate-right">
   <div class="cd-laptop cd-pro">
     <div class="cd-top"></div>
     <div class="cd-bottom"></div>
@@ -71,7 +95,7 @@
       <img src="http://www.joomlaworks.net/images/demos/galleries/abstract/7.jpg">
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- <div class="cd-browser">
   <div class="cd-nav">
@@ -87,3 +111,30 @@
   </div>
 </div>
  -->
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+ <script type="text/javascript">
+
+$(function(){
+  $('.cd-slideshow').each(function(){
+    var $this = this;
+    var pageSpeed = 4000;
+    var fadeSpeed = 1000;
+    if ($($this).attr('data-page-speed')) {
+      pageSpeed = $($this).data('page-speed');
+    }
+    if ($($this).attr('data-fade-speed')) {
+      fadeSpeed = $($this).data('fade-speed');
+    }
+    $('> :gt(0)', $this).hide();
+    setInterval(function(){$('> :first-child',$this).fadeOut(fadeSpeed).next().fadeIn(fadeSpeed).end().appendTo($this);}, pageSpeed);
+  })
+});
+
+$(function(){
+
+});
+
+ </script>
+
+
