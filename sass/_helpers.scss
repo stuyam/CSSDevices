@@ -25,6 +25,18 @@ div[class^='cd-']::before{
   color: white;
 }
 
+.iphone-5s,
+.iphone-5c,
+.iphone-6,
+.iphone-6-plus,
+.ipad{
+  border: 0;
+  position: relative;
+  z-index: 50;
+  font-size: 14px;
+  display: block;
+}
+
 ////////// Sizing Classes //////////
 .cd-xs{
   font-size: 50% !important;
