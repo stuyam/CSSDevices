@@ -50,7 +50,7 @@ div[class^='cd-']::before{
   display: none;
 }
 
-.cd-loader{
+.cd-smart-loader > :first-child{
   display: none;
 }
 
