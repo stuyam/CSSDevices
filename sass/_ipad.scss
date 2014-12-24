@@ -1,0 +1,70 @@
+.cd-ipad,
+.cd-ipad > .cd-body{
+  width: map-get($ipad, width);
+  height: map-get($ipad, height);
+}
+
+.cd-ipad{
+  .cd-body{
+    background: $device-black;
+    border-radius: 1.6em;
+    border: .25em solid $black-bezel;
+  }
+
+  .cd-home,
+  .cd-ear,
+  .cd-camera,
+  .cd-screen{
+    position: absolute;
+  }
+
+  .cd-camera{
+    background: $camera;
+    width: .5em;
+    height: .5em;
+    top: 1.6em;
+    left: 50%;
+    margin-left: -.25em;
+    border-radius: .3em;
+  }
+
+  .cd-screen{
+    width: map-get($ipad, screen-width);
+    height: map-get($ipad, screen-height);
+    background: black;
+    top: 3.7em;
+    left: 50%;
+    margin-left: -15em;
+    border: .2em solid black;
+  }
+
+  .cd-home{
+    width: 2.2em;
+    height: 2.2em;
+    border: .2em solid $black-home-btn;
+    bottom: .8em;
+    border-radius: 1.1em;
+    left: 50%;
+    margin-left: -1em;
+  }
+}
+
+.cd-ipad.cd-gold{
+  .cd-body{
+    background: $device-white;
+    border-color: $gold-bezel;
+  }
+  .cd-home{
+    border-color: $gold-bezel;
+  }
+}
+
+.cd-ipad.cd-silver{
+  .cd-body{
+    background: $device-white;
+    border-color: $silver-bezel;
+  }
+  .cd-home{
+    border-color: $silver-bezel;
+  }
+}
