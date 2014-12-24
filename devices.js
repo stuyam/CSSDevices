@@ -20,7 +20,7 @@ $(function(){
   });
 
   function handleLoad(){
-    var loadSpeed = ifDataExists(this, 'load-speed', 750);
+    var loadSpeed = ifDataExists(this, 'load-speed', 250);
     $(this).fadeIn(loadSpeed);
   }
 
