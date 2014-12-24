@@ -1,0 +1,61 @@
+.cd-mac{
+  width: map-get($mac, width);
+  height: map-get($mac, height);
+
+  .cd-top{
+    width: 52em;
+    height: 34em;
+    left: 50%;
+    margin-left: -26em;
+    background: $aluminum-top;
+    border-radius: 1.5em 1.5em .6em .6em;
+  }
+  .cd-camera{
+    width: .4em;
+    height: .4em;
+    background: $camera;
+    left: 50%;
+    margin-left: -.2em;
+    top: .8em;
+    border-radius: .2em;
+  }
+  .cd-screen{
+    width: map-get($mac, screen-width);
+    height: map-get($mac, screen-height);
+    background: $mac-screen;
+    overflow: hidden;
+    border: 1px solid $mac-screen;
+    top: 2em;
+    left: 50%;
+    margin-left: -24em;
+  }
+  .cd-bottom{
+    width: 100%;
+    height: 1em;
+    bottom: 0;
+    background: $aluminum-bottom;
+    border-radius: 10em/1.2em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .cd-notch{
+    width: 10em;
+    height: .5em;
+    background: $aluminum-top;
+    left: 50%;
+    margin-left: -5em;
+    bottom: .5em;
+    border-radius: 0 0 1em 1em;
+    border-top: 1px solid $aluminum-bottom;
+  }
+
+  &.cd-pro{
+    .cd-top{
+      background: $mac-pro-top;
+    }
+    .cd-bottom{
+      border-bottom-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+    }
+  }
+}
