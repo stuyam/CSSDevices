@@ -69,14 +69,15 @@ body{
 *[class^='cd-'].cd-blueprint *::after,
 *[class^='cd-'].cd-blueprint *::before{
   background: white !important;
-  border: 1px solid black !important;
+  border: 1px solid $blueprint !important;
 }
 
 .cd-blueprint .cd-sound,
 .cd-blueprint .cd-sound::before,
-.cd-blueprint .cd-sound::after,
-.cd-blueprint .cd-sleep{
-  background: black !important;
+.cd-blueprint .cd-sound::after{
+  background: $blueprint !important;
+  width: 1px !important;
+  border: none !important;
 }
 
 

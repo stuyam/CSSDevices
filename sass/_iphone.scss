@@ -116,7 +116,9 @@ div[class*='cd-iphone-5']{
     display:block;
     width: 1.2em;
     height: 1.2em;
-    margin: 1.15em auto;
+    top: 1.1em;
+    left: 50%;
+    margin-left: -.6em;
     border-radius: .3em;
     border: 1px solid $home-btn-inner-square;
   }
@@ -302,7 +304,6 @@ div[class*='cd-iphone-6']{
     height: 3.4em;
     width: .2em;
   }
-
   .cd-sleep{
     top: 9.3em;
     right: -.5em;
@@ -319,5 +320,28 @@ div[class*='cd-iphone-6']{
     height: map-get($iphone6-plus, screen-height);
     border: solid .2em black;
     border-radius: .1em;
+  }
+}
+
+//////// Blueprint ///////
+.cd-blueprint{
+  .cd-sound{
+    left: -2px !important;
+  }
+  &[class^='cd-iphone-6']{
+    .cd-sleep{
+      background: $blueprint !important;
+      width: 1px !important;
+      border: none !important;
+      right: -2px;
+    }
+  }
+  &[class^='cd-iphone-5']{
+    .cd-sleep{
+      background: $blueprint !important;
+      height: 1px !important;
+      border: none !important;
+      top: -2px;
+    }
   }
 }
