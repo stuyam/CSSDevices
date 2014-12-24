@@ -20,7 +20,7 @@ $(function(){
   });
 
   function handleLoad(){
-    var loadSpeed = ifDataExists(this, 'load-in-speed', 250);
+    var loadSpeed = ifDataExists($(this).parent('.cd-smart-loader'), 'load-in-speed', 250);
     $(this).fadeIn(loadSpeed);
   }
 
