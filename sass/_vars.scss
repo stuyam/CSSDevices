@@ -1,4 +1,5 @@
 ///////////// Colors ////////////
+//Bezels
 $blue-bezel: #7ec4fc;
 $green-bezel: #b3f390;
 $red-bezel: #fc828d;
@@ -6,7 +7,18 @@ $yellow-bezel: #fff38a;
 $white-bezel: #efefee;
 $silver-bezel: #bdbfbe;
 $gold-bezel: #ecdcc8;
-$black-bezel: #505050;
+$black-bezel: #656565;
+
+//Bodys
+$device-black: #1e1e1e;
+$device-white: #fafafa;
+
+//Parts
+$camera: #3c3d3d;
+$ear: #292728;
+$black-home-btn: #2c2b2c;
+$home-btn: #242324;
+$home-btn-inner-square: #393839;
 
 //////////// Devices Sizes /////////
 $iphone5: (width: 19.8em, height: 42em, screen-width: 17.8em, screen-height: 31em);
@@ -14,3 +26,5 @@ $iphone5: (width: 19.8em, height: 42em, screen-width: 17.8em, screen-height: 31e
 $iphone6: (width: 23em, height: 48em, screen-width: 21em, screen-height: 37em);
 
 $iphone6-plus: (width: 25.5em, height: 53em, screen-width: 23.6em, screen-height: 42em);
+
+$ipad: (width: 33.6em, height: 48em, screen-width: 30em, screen-height: 40em);

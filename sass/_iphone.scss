@@ -1,13 +1,3 @@
-$black-home: #2c2b2c;
-
-$camera: #3c3d3d;
-$ear: #292728;
-$home-btn: #242324;
-$home-btn-inner: #393839;
-
-$phone-black: #1e1e1e;
-$phone-white: #fafafa;
-
 .cd-iphone-5s,
 .cd-iphone-5c,
 .cd-iphone-5s > .cd-body,
@@ -30,16 +20,10 @@ $phone-white: #fafafa;
 
 /*---------  iPhone Parts --------*/
 div[class*='cd-iphone']{
-  border: 0;
-  position: relative;
-  z-index: 50;
-  font-size: 14px;
-  display: block;
-
   .cd-body{
     position: relative;
     border-style: solid;
-    background: $phone-black;
+    background: $device-black;
   }
 
   .cd-home,
@@ -146,7 +130,7 @@ div[class*='cd-iphone-5']{
     height: 1.2em;
     margin: 1.15em auto;
     border-radius: .3em;
-    border: 1px solid $home-btn-inner;
+    border: 1px solid $home-btn-inner-square;
   }
 
   .cd-body{
@@ -215,18 +199,18 @@ div[class*='cd-iphone-5']{
 
   &.cd-gold .cd-body,
   &.cd-gold .cd-body .cd-home{
-    background-color: $phone-white;
+    background-color: $device-white;
     border-color: $gold-bezel;
   }
 
   &.cd-silver .cd-body,
   &.cd-silver .cd-body .cd-home{
-    background-color: $phone-white;
+    background-color: $device-white;
     border-color: $silver-bezel;
   }
 
   .cd-body .cd-home{
-    border-color: $black-home;
+    border-color: $black-home-btn;
   }
 
   .cd-sound,
