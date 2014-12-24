@@ -3,14 +3,33 @@ body{
   font-size: 14px;
 }
 
-div[class^='cd-'],
-div[class^='cd-']::after,
-div[class^='cd-']::before{
+*[class^='cd-'],
+*[class^='cd-']::after,
+*[class^='cd-']::before{
   margin: 0;
   padding: 0;
   display: block;
   box-sizing: border-box;
   position: relative;
+}
+
+.cd-iphone-5s,
+.cd-iphone-5c,
+.cd-iphone-6,
+.cd-iphone-6-plus,
+.cd-ipad,
+.cd-mac{
+  border: 0;
+  position: relative;
+  z-index: 50;
+  font-size: 14px;
+  display: block;
+}
+
+*[class^='cd-'] *,
+*[class^='cd-'] *::after,
+*[class^='cd-'] *::before{
+  position: absolute;
 }
 
 .cd-screen > *{
@@ -23,18 +42,6 @@ div[class^='cd-']::before{
   width: 100%;
   height: 100%;
   color: white;
-}
-
-.iphone-5s,
-.iphone-5c,
-.iphone-6,
-.iphone-6-plus,
-.ipad{
-  border: 0;
-  position: relative;
-  z-index: 50;
-  font-size: 14px;
-  display: block;
 }
 
 ////////// Sizing Classes //////////

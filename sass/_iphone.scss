@@ -25,18 +25,6 @@ div[class*='cd-iphone']{
     border-style: solid;
     background: $device-black;
   }
-
-  .cd-home,
-  .cd-ear,
-  .cd-camera,
-  .cd-camera::after,
-  .cd-screen,
-  .cd-sound,
-  .cd-sound::after,
-  .cd-sound::before,
-  .cd-sleep{
-    position: absolute;
-  }
 }
 
 /*---------  iPhone5s & iPhone5c Parts --------*/
