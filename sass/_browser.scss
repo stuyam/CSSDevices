@@ -53,8 +53,16 @@
     background: white;
     border: 1px solid $browser-frame-border;
     overflow: scroll;
-    *{
+    & > *{
       height: auto;
+    }
+  }
+  &.cd-blueprint{
+    .cd-screen{
+      border-top: 0px !important;
+    }
+    .cd-url{
+      padding: .1em .1em .1em 1em;
     }
   }
 }
