@@ -3,9 +3,9 @@ body{
   font-size: 14px;
 }
 
-*[class^='cd-'],
-*[class^='cd-']::after,
-*[class^='cd-']::before{
+[class^='cd-'],
+[class^='cd-']::after,
+[class^='cd-']::before{
   margin: 0;
   padding: 0;
   display: block;
@@ -27,9 +27,9 @@ body{
   display: block;
 }
 
-*[class^='cd-'] *,
-*[class^='cd-'] *::after,
-*[class^='cd-'] *::before{
+[class^='cd-'] *,
+[class^='cd-'] *::after,
+[class^='cd-'] *::before{
   position: absolute;
 }
 
@@ -66,9 +66,9 @@ body{
 }
 
 ////////// Blueprint Theme //////////
-*[class^='cd-'].cd-blueprint *,
-*[class^='cd-'].cd-blueprint *::after,
-*[class^='cd-'].cd-blueprint *::before{
+[class^='cd-'].cd-blueprint *,
+[class^='cd-'].cd-blueprint *::after,
+[class^='cd-'].cd-blueprint *::before{
   background: white !important;
   border: 1px solid $blueprint !important;
 }

@@ -19,7 +19,7 @@
 }
 
 /*---------  iPhone Parts --------*/
-div[class*='cd-iphone']{
+[class^='cd-iphone']{
   .cd-body{
     position: relative;
     border-style: solid;
@@ -28,7 +28,7 @@ div[class*='cd-iphone']{
 }
 
 /*---------  iPhone5s & iPhone5c Parts --------*/
-div[class*='cd-iphone-5']{
+[class^='cd-iphone-5']{
   .cd-body{
     border-radius: 2.5em;
     border-width: .25em;
@@ -226,7 +226,7 @@ div[class*='cd-iphone-5']{
 }
 
 /*---------  iPhone6 & iPhone6 Plus Parts --------*/
-div[class*='cd-iphone-6']{
+[class^='cd-iphone-6']{
   .cd-body{
     border-radius: 3em;
     border-width: .4em;
