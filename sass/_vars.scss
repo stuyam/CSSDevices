@@ -17,8 +17,8 @@ $aluminum-bottom:           #BDBDBD;
 $blueprint:                 #000000;
 $watch-silver-body:         #D8D8D8;
 $watch-black-body:          #585858;
-$watch-gold-body:           #000000;
-$watch-rosegold-body:       #000000;
+$watch-gold-body:           #e9d296;
+$watch-rosegold-body:       #e9bfa9;
 
 //Parts
 $camera:                    #3c3d3d;
@@ -44,10 +44,10 @@ $blue-band:                 #81DAF5;
 $green-band:                #C8FE2E;
 $pink-band:                 #F66E64;
 $black-band:                #2E2E2E;
-$brown-band:                brown;
-$tan-band:                  tan;
-$navy-band:                 navy;
-$red-band:                  red;
+$brown-band:                #876450;
+$tan-band:                  #BEB0A6;
+$navy-band:                 #56586b;
+$red-band:                  #ff4838;
 
 ///////////// Devices Sizes /////////////
 $iphone5:      (width: 19.8em, height: 42em,   screen-width: 17.8em, screen-height: 31em);
@@ -55,6 +55,6 @@ $iphone6:      (width: 23em,   height: 48em,   screen-width: 21em,   screen-heig
 $iphone6-plus: (width: 25.5em, height: 53em,   screen-width: 23.6em, screen-height: 42em);
 $ipad:         (width: 33.6em, height: 48em,   screen-width: 30em,   screen-height: 40em);
 $mac:          (width: 60em,   height: 34.8em, screen-width: 48em,   screen-height: 30em);
-$watch:        (width: 16.5em, height: 28em,   screen-width: 11.2em, screen-height: 14em);
+$watch:        (width: 16.6em, height: 28em,   screen-width: 11.2em, screen-height: 14em);
 $browser:      (width: 50em,   height: 30em);
 
