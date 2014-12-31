@@ -1,0 +1,260 @@
+.cd{
+  border: 0;
+  position: relative;
+  z-index: 50;
+  border-radius: 35px;
+  width: 280px;
+  height: 600px;
+}
+
+/*---------  iPhone 5s --------*/
+
+.cd-5s-gold{
+  background-color: #ffffff;
+  border: 4px solid #ecdcc8;
+}
+
+.cd-5s-gold > .ear, .cd-5s-gold > .cam{
+  background: #ecdcc8;
+}
+
+.cd-5s-gold > .home{
+  border: 3px solid #ecdcc8;
+}
+
+.cd-5s-silver{
+  background-color: #ffffff;
+  border: 4px solid #bdbfbe;
+}
+
+.cd-5s-silver > .ear, .cd-5s-silver > .cam{
+  background: #bdbfbe;
+}
+
+.cd-5s-silver > .home{
+  border: 3px solid #bdbfbe;
+}
+
+.cd-5s-black{
+  background-color: #151515;
+  border: 4px solid #777679;
+}
+
+.cd-5s-black > .ear, .cd-5s-black > .cam{
+  background: #242424;
+}
+
+.cd-5s-black > .home{
+  border: 3px solid #3F3F3F;
+}
+
+/*---------  iPhone 5c --------*/
+
+.cd-5c-blue{
+  background-color: #151515;
+  border: 4px solid #7ec4fc;
+}
+
+.cd-5c-green{
+  background-color: #151515;
+  border: 4px solid #b3f390;
+}
+
+.cd-5c-red{
+  background-color: #151515;
+  border: 4px solid #fc828d;
+}
+
+.cd-5c-yellow{
+  background-color: #151515;
+  border: 4px solid #fff38a;
+}
+
+.cd-5c-white{
+  background-color: #151515;
+  border: 4px solid #efefee;
+}
+
+.cd-5c-blue > .home, .cd-5c-blue > .ear, .cd-5c-blue > .cam,
+.cd-5c-green > .home, .cd-5c-green > .ear, .cd-5c-green > .cam,
+.cd-5c-red > .home, .cd-5c-red > .ear, .cd-5c-red > .cam,
+.cd-5c-yellow > .home, .cd-5c-yellow > .ear, .cd-5c-yellow > .cam,
+.cd-5c-white > .home, .cd-5c-white > .ear, .cd-5c-white > .cam{
+  background: #242424;
+}
+
+.cd > .home, .cd > .ear, .cd > .cam, .cd .screen{
+  position: absolute;
+  left: 50%;
+}
+
+.cd > .cam{
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: -6px;
+}
+
+.cd > .ear{
+  top: 45px;
+  width: 55px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: -27.5px;
+}
+
+.cd > .home{
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: -25px;
+}
+
+.cd > .screen{
+  background: black;
+  width: 250px;
+  margin-left: -125px;
+  height: 440px;
+  top: 80px;
+}
+
+.cd-lg{
+  width: calc(280px * 1.3);
+  height: calc(600px * 1.3);
+  border-radius: calc(35px * 1.3);
+  border-width: calc(4px * 1.3);
+}
+
+.cd-lg > .cam{
+  top: calc(20px * 1.3);
+  width: calc(12px * 1.3);
+  height: calc(12px * 1.3);
+  margin-left: calc(-6px * 1.3);
+}
+
+.cd-lg > .ear{
+  top: calc(45px * 1.3);
+  width: calc(55px * 1.3);
+  height: calc(10px * 1.3);
+  border-radius: calc(5px * 1.3);
+  margin-left: calc(-27.5px * 1.3);
+}
+
+.cd-lg > .home{
+  bottom: calc(15px * 1.3);
+  width: calc(50px * 1.3);
+  height: calc(50px * 1.3);
+  margin-left: calc(-25px * 1.3);
+}
+
+.cd-lg > .screen{
+  width: calc(250px * 1.3);
+  margin-left: calc(-125px * 1.3);
+  height: calc(440px * 1.3);
+  top: calc(80px * 1.3);
+}
+
+.cd-sm{
+  width: calc(280px * .7);
+  height: calc(600px * .7);
+  border-radius: calc(35px * .7);
+  border-width: calc(4px * .7);
+}
+
+.cd-sm > .cam{
+  top: calc(20px * .7);
+  width: calc(12px * .7);
+  height: calc(12px * .7);
+  margin-left: calc(-6px * .7);
+}
+
+.cd-sm > .ear{
+  top: calc(45px * .7);
+  width: calc(55px * .7);
+  height: calc(10px * .7);
+  border-radius: calc(5px * .7);
+  margin-left: calc(-27.5px * .7);
+}
+
+.cd-sm > .home{
+  bottom: calc(15px * .7);
+  width: calc(50px * .7);
+  height: calc(50px * .7);
+  margin-left: calc(-25px * .7);
+}
+
+.cd-sm > .screen{
+  width: calc(250px * .7);
+  margin-left: calc(-125px * .7);
+  height: calc(440px * .7);
+  top: calc(80px * .7);
+}
+
+.cd-xs{
+  width: calc(280px * .5);
+  height: calc(600px * .5);
+  border-radius: calc(35px * .5);
+  border-width: calc(4px * .5);
+}
+
+.cd-xs > .cam{
+  top: calc(20px * .5);
+  width: calc(12px * .5);
+  height: calc(12px * .5);
+  margin-left: calc(-6px * .5);
+}
+
+.cd-xs > .ear{
+  top: calc(45px * .5);
+  width: calc(55px * .5);
+  height: calc(10px * .5);
+  border-radius: calc(5px * .5);
+  margin-left: calc(-27.5px * .5);
+}
+
+.cd-xs > .home{
+  bottom: calc(15px * .5);
+  width: calc(50px * .5);
+  height: calc(50px * .5);
+  margin-left: calc(-25px * .5);
+}
+
+.cd-xs > .screen{
+  width: calc(250px * .5);
+  margin-left: calc(-125px * .5);
+  height: calc(440px * .5);
+  top: calc(80px * .5);
+}
+
+.cd-5s-gold > .home,
+.cd-5s-silver > .home,
+.cd-5s-black > .home{
+  margin-left: -30px;
+  bottom: 12px;
+}
+
+.cd-5s-gold.cd-lg > .home,
+.cd-5s-silver.cd-lg > .home,
+.cd-5s-black.cd-lg > .home{
+  margin-left: calc(-30px * 1.3);
+  bottom: calc(12px * 1.3);
+  border-width: calc(3px * 1.3);
+}
+
+.cd-5s-gold.cd-sm > .home,
+.cd-5s-silver.cd-sm > .home,
+.cd-5s-black.cd-sm > .home{
+  margin-left: calc(-30px * .7);
+  bottom: calc(12px * .7);
+  border-width: calc(3px * .7);
+}
+
+.cd-5s-gold.cd-xs > .home,
+.cd-5s-silver.cd-xs > .home,
+.cd-5s-black.cd-xs > .home{
+  margin-left: calc(-30px * .5);
+  bottom: calc(12px * .7);
+  border-width: calc(3px * .5);
+}
