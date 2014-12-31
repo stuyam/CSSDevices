@@ -1,4 +1,4 @@
-///////////// Colors ////////////
+///////////// Colors /////////////
 //Bezels
 $blue-bezel:                #7ec4fc;
 $green-bezel:               #b3f390;
@@ -8,6 +8,9 @@ $white-bezel:               #efefee;
 $silver-bezel:              #bdbfbe;
 $gold-bezel:                #ecdcc8;
 $black-bezel:               #656565;
+  //Watch
+$sport-bezel-silver:        #D8D8D8;
+$sport-bezel-black:         #585858;
 
 //Bodys
 $device-black:              #1e1e1e;
@@ -22,8 +25,10 @@ $ear:                       #292728;
 $black-home-btn:            #2c2b2c;
 $home-btn:                  #242324;
 $home-btn-inner-square:     #393839;
+  //Mac
 $mac-screen:                #3c3d3d;
 $mac-pro-top:               #1C1C1C;
+  //Browser
 $browser-btn-red:           #fc615d;
 $browser-btn-yellow:        #fdbf44;
 $browser-btn-green:         #34cf47;
@@ -32,17 +37,19 @@ $browser-btn-yellow-border: #eeb244;
 $browser-btn-green-border:  #36bd44;
 $browser-nav-bar:           #eaeaea;
 $browser-frame-border:      #D6D6D6;
+  //Watch
+$sport-white:               #F2F2F2;
+$sport-blue:                #81DAF5;
+$sport-green:               #C8FE2E;
+$sport-red:                 #F66E64;
+$sport-black:               #2E2E2E;
 
-//////////// Devices Sizes /////////
+///////////// Devices Sizes /////////////
 $iphone5:      (width: 19.8em, height: 42em,   screen-width: 17.8em, screen-height: 31em);
-
 $iphone6:      (width: 23em,   height: 48em,   screen-width: 21em,   screen-height: 37em);
-
 $iphone6-plus: (width: 25.5em, height: 53em,   screen-width: 23.6em, screen-height: 42em);
-
 $ipad:         (width: 33.6em, height: 48em,   screen-width: 30em,   screen-height: 40em);
-
 $mac:          (width: 60em,   height: 34.8em, screen-width: 48em,   screen-height: 30em);
-
+$watch:        (width: 16.5em, height: 28em,   screen-width: 11.2em, screen-height: 14em);
 $browser:      (width: 50em,   height: 30em);
 
