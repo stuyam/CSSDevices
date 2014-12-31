@@ -8,9 +8,6 @@ $white-bezel:               #efefee;
 $silver-bezel:              #bdbfbe;
 $gold-bezel:                #ecdcc8;
 $black-bezel:               #656565;
-  //Watch
-$sport-bezel-silver:        #D8D8D8;
-$sport-bezel-black:         #585858;
 
 //Bodys
 $device-black:              #1e1e1e;
@@ -18,6 +15,10 @@ $device-white:              #fafafa;
 $aluminum-top:              #d6d5da;
 $aluminum-bottom:           #BDBDBD;
 $blueprint:                 #000000;
+$watch-silver-body:         #D8D8D8;
+$watch-black-body:          #585858;
+$watch-gold-body:           #000000;
+$watch-rosegold-body:       #000000;
 
 //Parts
 $camera:                    #3c3d3d;
@@ -38,11 +39,15 @@ $browser-btn-green-border:  #36bd44;
 $browser-nav-bar:           #eaeaea;
 $browser-frame-border:      #D6D6D6;
   //Watch
-$sport-white:               #F2F2F2;
-$sport-blue:                #81DAF5;
-$sport-green:               #C8FE2E;
-$sport-red:                 #F66E64;
-$sport-black:               #2E2E2E;
+$white-band:                #F2F2F2;
+$blue-band:                 #81DAF5;
+$green-band:                #C8FE2E;
+$pink-band:                 #F66E64;
+$black-band:                #2E2E2E;
+$brown-band:                brown;
+$tan-band:                  tan;
+$navy-band:                 navy;
+$red-band:                  red;
 
 ///////////// Devices Sizes /////////////
 $iphone5:      (width: 19.8em, height: 42em,   screen-width: 17.8em, screen-height: 31em);

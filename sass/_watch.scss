@@ -6,7 +6,7 @@
     width: map-get($watch, screen-width);
     left: 50%;
     margin-left: -1 * map-get($watch, screen-width)/2;
-    border: .5em solid $sport-bezel-silver;
+    border: .5em solid $watch-silver-body;
     border-radius: .8em;
   }
   .cd-top-bracket{
@@ -18,7 +18,7 @@
   [class$='-band']{
     width: 9em;
     height: 8em;
-    background: $sport-white;
+    background: $blue-band;
     left: 50%;
     margin-left: -4.5em;
     border-radius: .4em;
@@ -37,7 +37,7 @@
     right: 0;
     top: 50%;
     margin-top: -5em;
-    background: $sport-bezel-silver;
+    background: $watch-silver-body;
     border-radius: 0 .4em .4em 0;
   }
   .cd-button{
@@ -45,7 +45,7 @@
     height: 5em;
     right: .4em;
     top: 50%;
-    background: $sport-bezel-silver;
+    background: $watch-silver-body;
     border-radius: 0 .3em .3em 0;
   }
   .cd-body{
@@ -55,7 +55,7 @@
     left: 50%;
     margin-top: -1 * (map-get($watch, screen-height) + 4)/2;
     margin-left: -1 * (map-get($watch, screen-width) + 4)/2;
-    border: .7em solid $sport-bezel-silver;
+    border: .7em solid $watch-silver-body;
     border-radius: 3em;
     background: black;
   }
@@ -75,53 +75,79 @@
     }
   }
 
-  &.cd-sport-white,
-  &.cd-sport-blue,
-  &.cd-sport-green,
-  &.cd-sport-red,
-  &.cd-sport-black{
-    [class$='-bracket']{
-      display: none;
-    }
+//////////Bodies//////////
+  &.cd-black-body{
     .cd-crown,
     .cd-button{
-      background: $sport-bezel-silver;
+      background: $watch-black-body;
     }
     .cd-body{
-      border-color: $sport-bezel-silver;
+      border-color: $watch-black-body;
     }
   }
+  &.cd-gold-body{
+    .cd-crown,
+    .cd-button{
+      background: $watch-gold-body;
+    }
+    .cd-body{
+      border-color: $watch-gold-body;
+    }
+  }
+  &.cd-rosegold-body{
+    .cd-crown,
+    .cd-button{
+      background: $watch-gold-body;
+    }
+    .cd-body{
+      border-color: $watch-gold-body;
+    }
+  }
+}
 
-  &.cd-sport-white{
-    [class$='-band']{
-      background: $sport-white;
-    }
+//////////Bands//////////
+.cd-watch.cd-no-bracket{
+  [class$='-bracket']{
+    display: none;
   }
-  &.cd-sport-blue{
-    [class$='-band']{
-      background: $sport-blue;
-    }
+}
+
+[class$='-band']{
+  .cd-watch.cd-white-band &{
+    background: $white-band;
   }
-  &.cd-sport-green{
-    [class$='-band']{
-      background: $sport-green;
-    }
+  .cd-watch.cd-blue-band &{
+    background: $blue-band;
   }
-  &.cd-sport-red{
-    [class$='-band']{
-      background: $sport-red;
-    }
+  .cd-watch.cd-green-band &{
+    background: $green-band;
   }
-  &.cd-sport-black{
-    [class$='-band']{
-      background: $sport-black;
-    }
-    .cd-crown,
-    .cd-button{
-      background: $sport-bezel-black;
-    }
-    .cd-body{
-      border-color: $sport-bezel-black;
-    }
+  .cd-watch.cd-pink-band &{
+    background: $pink-band;
+  }
+  .cd-watch.cd-black-band &{
+    background: $black-band;
+  }
+  .cd-watch.cd-brown-band &{
+    background: $brown-band;
+  }
+  .cd-watch.cd-tan-band &{
+    background: $tan-band;
+  }
+  .cd-watch.cd-navy-band &{
+    background: $navy-band;
+  }
+  .cd-watch.cd-red-band &{
+    background: $red-band;
+  }
+  .cd-watch.cd-linked-band &{
+    background: linear-gradient(
+      to bottom,
+      #848484,
+      #848484 10%,
+      #D8D8D8 10%,
+      #D8D8D8
+    );
+    background-size: 100% 2em;
   }
 }
