@@ -26,10 +26,14 @@
   .cd-top-band{
     top: -1.4em;
     transform: perspective( 30em ) rotateX( 45deg );
+    -webkit-transform: perspective( 30em ) rotateX( 45deg );
+    -ms-transform: perspective( 30em ) rotateX( 45deg );
   }
   .cd-bottom-band{
     bottom: -1.4em;
     transform: perspective( 30em ) rotateX( -45deg );
+    -webkit-transform: perspective( 30em ) rotateX( -45deg );
+    -ms-transform: perspective( 30em ) rotateX( -45deg );
   }
   .cd-crown{
     width: .8em;

@@ -123,12 +123,20 @@ body{
 }
 
 .cd-landscape-left{
+  & > .cd-body,
+  & > .cd-body > .cd-screen{
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+  }
   & > .cd-body{
     transform: rotate(-90deg) translate(-100%,0);
-    transform-origin:0 0;
+    -webkit-transform: rotate(-90deg) translate(-100%,0);
+    -ms-transform: rotate(-90deg) translate(-100%,0);
     & > .cd-screen{
-      transform: rotate(90deg) translate(0, -100%);
-      transform-origin:0 0;
+      transform: rotate(90deg) translate(0,-100%);
+      -webkit-transform: rotate(90deg) translate(0,-100%);
+      -ms-transform: rotate(90deg) translate(0,-100%);
     }
   }
   &:not(.cd-landscape-fixed-screen){
@@ -153,12 +161,20 @@ body{
 }
 
 .cd-landscape-right{
+  & > .cd-body,
+  & > .cd-body > .cd-screen{
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+    -ms-transform-origin:0 0;
+  }
   & > .cd-body{
     transform: rotate(90deg) translate(0, -100%);
-    transform-origin:0 0;
+    -webkit-transform: rotate(90deg) translate(0, -100%);
+    -ms-transform: rotate(90deg) translate(0, -100%);
     & > .cd-screen{
       transform: rotate(-90deg) translate(-100%, 0);
-      transform-origin:0 0;
+      -webkit-transform: rotate(-90deg) translate(-100%, 0);
+      -ms-transform: rotate(-90deg) translate(-100%, 0);
     }
   }
   &:not(.cd-landscape-fixed-screen){
@@ -184,5 +200,9 @@ body{
 
 .cd-landscape-fixed-screen > .cd-body > .cd-screen{
   transform: none;
+  -webkit-transform: none;
+  -ms-transform: none;
   transform-origin: none;
+  -webkit-transform-origin: none;
+  -ms-transform-origin: none;
 }
