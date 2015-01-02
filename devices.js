@@ -1,33 +1,50 @@
 $(function(){
-  if( $('.cd-screen').children().length > 1){}
   $('.cd-screen').each(function(){
-    var $this = this;
-    if( $($this).children().length > 1 && !$($this).hasClass('cd-no-slideshow')){
-      var pageSpeed = ifDataExists($this, 'page-speed', 5000);
-      var fadeSpeed = ifDataExists($this, 'fade-speed', 1000);
-      $('> :gt(0)', $this).hide();
-      if ( !$($this).hasClass('cd-smart-loader')) {
-        $('> :eq(0)', $this).css('display', 'block');
+    var _this = this;
+    if($(_this).hasClass('cd-smart-loader')){
+      if(isSlideShow(_this)){
+        $('> :gt(0)', _this).hide();
       }
-      setInterval(function(){$('> :first-child',$this).fadeOut(fadeSpeed).next().fadeIn(fadeSpeed).end().appendTo($this);}, pageSpeed);
+      $('> :first-child',_this).each(function(){
+        handleLoadBinding(this);
+      });
+    }
+    else{
+      callSlideShow(_this);
     }
   });
 
-  $(".cd-smart-loader > :first-child").each(function() {
-    var $this = $(this);
-    $this.on("load", handleLoad);
-    if (this.complete) {
-        $this.off("load", handleLoad);
-        handleLoad.call(this);
-    }
-  });
-
-  function handleLoad(){
-    var loadSpeed = ifDataExists($(this).parent('.cd-smart-loader'), 'load-in-speed', 250);
-    $(this).fadeIn(loadSpeed);
+  function isSlideShow(_self){
+    return $(_self).children().length > 1 && ! $(_self).hasClass('cd-no-slideshow');
   }
 
-  function ifDataExists(saveThis, data, defaultValue){
+  function callSlideShow(_self){
+    if(isSlideShow(_self)){
+      var pageSpeed = getOptionalData(_self, 'page-speed', 5000);
+      var fadeSpeed = getOptionalData(_self, 'fade-speed', 1000);
+      $('> :gt(0)', _self).hide();
+      if ( ! $(_self).hasClass('cd-smart-loader')) {
+        $('> :eq(0)', _self).css('display', 'block');
+      }
+      setInterval(function(){$('> :first-child',_self).fadeOut(fadeSpeed).next().fadeIn(fadeSpeed).end().appendTo(_self);}, pageSpeed);
+    }
+  }
+
+  function handleLoadBinding(_self){
+    $(_self).on('load', handleLoad);
+    if (_self.complete) {
+      $(_self).off('load', handleLoad);
+      handleLoad.call(_self);
+    }
+  }
+
+  function handleLoad(){
+    var loadSpeed = getOptionalData($(this).parent('.cd-smart-loader'), 'load-in-speed', 250);
+    $(this).fadeIn(loadSpeed);
+    callSlideShow($(this).parent()[0]);
+  }
+
+  function getOptionalData(saveThis, data, defaultValue){
     if ($(saveThis).attr('data-' + data)) {
       return $(saveThis).data(data);
     }
