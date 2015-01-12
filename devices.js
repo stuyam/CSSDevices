@@ -52,23 +52,20 @@ $(function(){
   }
 
   //// Container Filler ////
-  $('.cd-fill-container').each(function(){
-    $(this).data('initial-width', $(this).width());
-  });
+  var firstGo = true;
   fillContainer();
-
-
   $(window).resize(function(){
     fillContainer();
   });
 
   function fillContainer(){
     $('.cd-fill-container').each(function(){
-      var _this = this;
-      $(_this).css('font-size', (( $(_this).parent().width()/parseInt($(_this).data('initial-width'))) * 100) + '%');
+      if( firstGo ){
+        $(this).data('initial-width', $(this).width());
+      }
+      $(this).css('font-size', (( $(this).parent().width()/parseInt($(this).data('initial-width'))) * 100) + '%');
     });
+    firstGo = false;
   }
-
-
 
 });
