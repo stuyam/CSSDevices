@@ -47,23 +47,45 @@ body{
   color: white;
 }
 
-////////// Sizing Classes //////////
-.cd-xs{
+////////// Scaling Classes //////////
+.cd-scale-10{
+  font-size: 10% !important;
+}
+.cd-scale-20{
+  font-size: 20% !important;
+}
+.cd-scale-30{
+  font-size: 30% !important;
+}
+.cd-scale-40{
+  font-size: 40% !important;
+}
+.cd-scale-50{
   font-size: 50% !important;
 }
-
-.cd-sm{
+.cd-scale-60{
+  font-size: 60% !important;
+}
+.cd-scale-70{
   font-size: 70% !important;
 }
+.cd-scale-80{
+  font-size: 80% !important;
+}
+.cd-scale-90{
+  font-size: 90% !important;
+}
 
-.cd-lg{
-  font-size: 130% !important;
+////////// Padding Device (using margin) //////////
+.cd-padded-device{
+  margin: 20px;
 }
 
 ////////// Centering Device //////////
 .cd-center{
   position: relative;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
