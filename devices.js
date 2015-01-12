@@ -50,4 +50,25 @@ $(function(){
     }
     return defaultValue;
   }
+
+  //// Container Filler ////
+  $('.cd-fill-container').each(function(){
+    $(this).data('initial-width', $(this).width());
+  });
+  fillContainer();
+
+
+  $(window).resize(function(){
+    fillContainer();
+  });
+
+  function fillContainer(){
+    $('.cd-fill-container').each(function(){
+      var _this = this;
+      $(_this).css('font-size', (( $(_this).parent().width()/parseInt($(_this).data('initial-width'))) * 100) + '%');
+    });
+  }
+
+
+
 });
