@@ -51,7 +51,7 @@ $(function(){
   }
 
   $('.cd-device-loader').each(function(){
-    if( ! $(this).hasClass('cd-fill-container')){
+    if( ! $(this).hasClass('cd-fill-parent')){
       fadeDeviceIn(this);
     }
   });
@@ -65,7 +65,7 @@ $(function(){
   });
 
   function fillContainer(){
-    $('.cd-fill-container').each(function(){
+    $('.cd-fill-parent').each(function(){
       if( firstGo ){
         $(this).data('initial-width', $(this).width());
       }
