@@ -89,6 +89,12 @@ body{
   margin: 20px;
 }
 
+////////// Device Fade In //////////
+.cd-fill-container,
+.cd-device-loader{
+  visibility: hidden;
+}
+
 ////////// Centering Device //////////
 .cd-center{
   position: relative;
