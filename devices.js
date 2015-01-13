@@ -69,7 +69,13 @@ $(function(){
       if( firstGo ){
         $(this).data('initial-width', $(this).width());
       }
-      $(this).css('font-size', (( $(this).parent().width()/parseInt($(this).data('initial-width'))) * 100) + '%');
+      if( $(this).hasClass('cd-padded-device')){
+        var fontPercentage = ($(this).parent().width() - 40)/parseInt($(this).data('initial-width')) * 100;
+      }
+      else{
+        var fontPercentage = $(this).parent().width()/parseInt($(this).data('initial-width')) * 100;
+      }
+      $(this).css('font-size', fontPercentage + '%');
       if( firstGo ){
         fadeDeviceIn(this);
       }
