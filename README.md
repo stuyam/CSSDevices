@@ -3,6 +3,6 @@ CSSDevices
 
 CSS library for "flat" devices
 
-Examples, installation, and usage instructions here: http://yamartino.github.io/CSSDevices
+Examples, installation, and usage instructions here: http://CSSDevices.io
 
 MIT Licensed
