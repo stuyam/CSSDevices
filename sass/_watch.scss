@@ -1,36 +1,32 @@
 .cd-watch{
   width: map-get($watch, width);
   height: map-get($watch, height);
-  [class$='-bracket']{
-    height: map-get($watch, screen-height);
+  .cd-bracket{
+    height: map-get($watch, screen-height) + 5.4em;
     width: map-get($watch, screen-width);
     left: 50%;
     margin-left: -1 * map-get($watch, screen-width)/2;
     border: .5em solid $watch-silver-body;
     border-radius: .8em;
-  }
-  .cd-top-bracket{
     top: 4.3em;
-  }
-  .cd-bottom-bracket{
-    bottom: 4.3em;
   }
   [class$='-band']{
     width: 9em;
-    height: 8em;
+    height: 7em;
     background: $blue-band;
     left: 50%;
     margin-left: -4.5em;
-    border-radius: .4em;
   }
   .cd-top-band{
-    top: -1.4em;
+    border-radius: .5em .5em 0 0;
+    top: -1.2em;
     transform: perspective( 30em ) rotateX( 45deg );
     -webkit-transform: perspective( 30em ) rotateX( 45deg );
     -ms-transform: perspective( 30em ) rotateX( 45deg );
   }
   .cd-bottom-band{
-    bottom: -1.4em;
+    border-radius: 0 0 .5em .5em;
+    bottom: -1.2em;
     transform: perspective( 30em ) rotateX( -45deg );
     -webkit-transform: perspective( 30em ) rotateX( -45deg );
     -ms-transform: perspective( 30em ) rotateX( -45deg );
@@ -79,7 +75,7 @@
     }
   }
   &.cd-no-bracket{
-    [class$='-bracket']{
+    .cd-bracket{
       display: none;
     }
   }
@@ -89,7 +85,7 @@
     .cd-button{
       background: $watch-black-body;
     }
-    [class$='-bracket'],
+    .cd-bracket,
     .cd-body{
       border-color: $watch-black-body;
     }
@@ -99,7 +95,7 @@
     .cd-button{
       background: $watch-gold-body;
     }
-    [class$='-bracket'],
+    .cd-bracket,
     .cd-body{
       border-color: $watch-gold-body;
     }
@@ -109,7 +105,7 @@
     .cd-button{
       background: $watch-rosegold-body;
     }
-    [class$='-bracket'],
+    .cd-bracket,
     .cd-body{
       border-color: $watch-rosegold-body;
     }
@@ -158,11 +154,8 @@
 }
 
 .cd-watch.cd-blueprint{
-  .cd-top-bracket{
+  .cd-bracket{
     top: 4.6em;
-  }
-  .cd-bottom-bracket{
-    bottom: 4.6em;
   }
   .cd-crown,
   .cd-button{
