@@ -156,6 +156,7 @@
 .cd-watch.cd-blueprint{
   .cd-bracket{
     top: 4.6em;
+    height: map-get($watch, screen-height) + 4.9em;
   }
   .cd-crown,
   .cd-button{
