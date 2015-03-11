@@ -54,6 +54,14 @@ body{
   user-drag: none;
 }
 
+.cd-screen.cd-screen-scrolling{
+  overflow-y: scroll;
+  & > *{
+    bottom: none;
+    height: auto;
+  }
+}
+
 ////////// Scaling Classes //////////
 .cd-scale-10{
   font-size: 10% !important;
