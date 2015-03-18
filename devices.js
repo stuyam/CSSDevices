@@ -1,3 +1,4 @@
+/*! CSSDevices v2.1.0 | MIT license | Maintained by Stuart Yamartino | http://cssdevices.io */
 $(function(){
   $('.cd-screen').each(function(){
     if($(this).hasClass('cd-smart-loader')){
@@ -19,13 +20,18 @@ $(function(){
 
   function callSlideShow(_self){
     if(isSlideShow(_self)){
-      var pageSpeed = getOptionalData(_self, 'page-speed', 5000);
-      var fadeSpeed = getOptionalData(_self, 'fade-speed', 1000);
+      var pauseSpeed = getOptionalData(_self, 'pause-speed', 5000);
+      var transitionSpeed = getOptionalData(_self, 'transition-speed', 1000);
       $('> :gt(0)', _self).hide();
-      if ( ! $(_self).hasClass('cd-smart-loader')) {
+      if ( ! $(_self).hasClass('cd-smart-loader') ) {
         $('> :eq(0)', _self).css('display', 'block');
       }
-      setInterval(function(){$('> :first-child',_self).fadeOut(fadeSpeed).next().fadeIn(fadeSpeed).end().appendTo(_self);}, pageSpeed);
+      if( $(_self).hasClass('cd-transition-slider') ) {
+        setInterval(function(){$('> :first-child',_self).animate({ 'margin-left': '-100%' }, transitionSpeed).next().css({'display':'block','margin-left': '100%'}).animate({ 'margin-left': '0%' }, transitionSpeed).end().appendTo(_self);}, pauseSpeed);
+      }
+      else{
+        setInterval(function(){$('> :first-child',_self).fadeOut(transitionSpeed).next().fadeIn(transitionSpeed).end().appendTo(_self);}, pauseSpeed);
+      }
     }
   }
 

@@ -34,8 +34,12 @@ body{
   position: absolute;
 }
 
+.cd-screen{
+  overflow: hidden;
+}
+
 .cd-screen > *{
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -52,6 +56,10 @@ body{
   -webkit-user-drag: none;
   -moz-user-drag: none;
   user-drag: none;
+}
+
+.cd-screen:first-child{
+  display: block;
 }
 
 .cd-screen.cd-screen-scrolling{
