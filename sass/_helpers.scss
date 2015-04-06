@@ -58,7 +58,7 @@ body{
   user-drag: none;
 }
 
-.cd-screen:first-child{
+.cd-screen > *:first-child{
   display: block;
 }
 
