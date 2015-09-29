@@ -1,4 +1,4 @@
-CSSDevices v2.1.1
+CSSDevices v2.2.0
 ==========
 
 Library of Apple devices built in pure CSS
