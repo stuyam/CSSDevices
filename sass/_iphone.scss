@@ -193,6 +193,12 @@
     border-color: $gold-bezel;
   }
 
+  &.cd-rosegold .cd-body,
+  &.cd-rosegold .cd-body .cd-home{
+    background-color: $device-white;
+    border-color: $rosegold-bezel;
+  }
+
   &.cd-silver .cd-body,
   &.cd-silver .cd-body .cd-home{
     background-color: $device-white;
@@ -217,6 +223,13 @@
     background: $gold-bezel;
   }
 
+  &.cd-rosegold .cd-sound,
+  &.cd-rosegold .cd-sound::before,
+  &.cd-rosegold .cd-sound::after,
+  &.cd-rosegold .cd-sleep{
+    background: $rosegold-bezel;
+  }
+
   &.cd-silver .cd-sound,
   &.cd-silver .cd-sound::before,
   &.cd-silver .cd-sound::after,
@@ -239,10 +252,11 @@
     margin-left: -4em;
     width: .7em;
     height: .7em;
-    border-radius: .4em;
+    border-radius: .35em;
   }
 
   &.cd-gold .cd-camera::after,
+  &.cd-rosegold .cd-camera::after,
   &.cd-silver .cd-camera::after{
     content: "";
     background: $camera;
@@ -250,7 +264,7 @@
     right: -3.5em;
     width: .5em;
     height: .5em;
-    border-radius: .3em;
+    border-radius: .25em;
   }
 
   .cd-ear{

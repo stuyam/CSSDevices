@@ -1,4 +1,4 @@
-/*! CSSDevices v2.1.0 | MIT license | Maintained by Stuart Yamartino | http://cssdevices.io */
+/*! CSSDevices v2.2.0 | MIT license | Maintained by Stuart Yamartino | http://cssdevices.io */
 $(function(){
   $('.cd-screen').each(function(){
     if($(this).hasClass('cd-smart-loader')){
