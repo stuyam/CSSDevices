@@ -1,0 +1,34 @@
+{
+  "name": "cssdevices",
+  "version": "2.2.1",
+  "description": "Apple devices built in pure CSS",
+  "main": "devices.min.css",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuyam/CSSDevices.git"
+  },
+  "keywords": [
+    "css",
+    "apple",
+    "iphone",
+    "ipad",
+    "apple-watch",
+    "mac"
+  ],
+  "author": "Stuart Yamartino @StuYam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stuyam/CSSDevices/issues"
+  },
+  "homepage": "https://github.com/stuyam/CSSDevices#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
+  }
+}
