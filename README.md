@@ -2,7 +2,6 @@ CSSDevices v2.2.0
 ==========
 
 [![Join the chat at https://gitter.im/yamartino/CSSDevices](https://badges.gitter.im/yamartino/CSSDevices.svg)](https://gitter.im/yamartino/CSSDevices?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![GitHub Rank](https://reporank.com/yamartino/CSSDevices)](https://reporank.com)
 
 Library of Apple devices built in pure CSS
 
