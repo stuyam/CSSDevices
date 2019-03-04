@@ -5,7 +5,7 @@ CSSDevices v2.2.0
 
 Library of Apple devices built in pure CSS
 
-Examples, installation, and usage instructions here: http://CSSDevices.io
+Examples, installation, and usage instructions here: http://CSSDevices.com
 
 MIT Licensed
 
