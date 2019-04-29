@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSSDevices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/devices.min.css" />
+    <meta name="description" content="CSSDevices is a library of Apple devices built in pure CSS. They are robust and have an accompanying javascript package that allows easy slideshowing and image loading. Devices include iPhone 6, iPhone 6 Plus, iPhone 5s, iPhone 5c, iPad Air, MacBook Air, MacBook Pro, and all of the Apple Watches." />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'Yamartino/CSSDevices'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cssdevices-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">CSSDevices</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="cssdevices-nav">
+          <ul class="nav navbar-nav">
+            <li><a href="setup.html">Setup</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Devices <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="watch.html">Watch</a></li>
+              </ul>
+            </li>
+            <li><a href="helpers.html">Helpers</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="expo.html">Expo</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/stuyam/CSSDevices"><button type="button" class="btn btn-primary navbar-btn">Download on <strong>GitHub</strong></button></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="c">CSSDevices</h1>
+      <h4 class="c">Library of Apple devices built in pure CSS</h4>
+<!--       <a href="http://twitter.com/StuYam" class="c">Stuart Yamartino on <span class="b">Twitter</span></a>
+      <iframe src="http://ghbtns.com/github-btn.html?user=yamartino&amp;repo=CSSDevices&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe> -->
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="cd-iphone-6 cd-fill-parent cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/iphone5-lock.png">
+                <img src="img/iphone6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="cd-mac cd-fill-parent cd-padded-device">
+            <div class="cd-top"></div>
+            <div class="cd-bottom"></div>
+            <div class="cd-camera"></div>
+            <div class="cd-notch"></div>
+            <div class="cd-screen cd-smart-loader">
+              <img src="img/launchpad.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <div class="clearfix">
+        <div class="pull-left">
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="http://CSSDevices.io" data-size="large" data-via="StuYam" data-text="Check out all the awesome #CSSDevices on"></a>
+          <iframe style="margin-top: -1px; margin-left: 20px;float:right;" src="http://ghbtns.com/github-btn.html?user=yamartino&amp;repo=CSSDevices&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+        </div>
+        <div class="pull-right">
+          <div style="margin-top:4px;">This project is maintained by <a href="https://twitter.com/StuYam" target="new">Stuart Yamartino</a></div>
+        </div>
+      </div>
+
+      <hr style="margin-top: 16px;">
+      <h2>iPhone</h2>
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="cd-iphone-6 cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/iphone6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="cd-iphone-6 cd-silver cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/iphone6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="cd-iphone-6 cd-gold cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/iphone6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="cd-iphone-6 cd-rosegold cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/iphone6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1 col-sm-offset-1">
+          <div class="cd-iphone-5c cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/blue.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="cd-iphone-5c cd-red cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/red.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="cd-iphone-5c cd-green cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/green.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="cd-iphone-5c cd-yellow cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/yellow.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="cd-iphone-5s cd-scale-40 cd-center cd-padded-device">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/iphone5.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <h2>iPad</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="cd-ipad cd-scale-60 cd-padded-device cd-center">
+            <div class="cd-body">
+              <div class="cd-camera"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen">
+                <img src="img/ipad.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="cd-ipad cd-silver cd-scale-60 cd-padded-device cd-center">
+            <div class="cd-body">
+              <div class="cd-camera"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen">
+                <img src="img/ipad.png">
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-4">
+          <div class="cd-ipad cd-gold cd-scale-60 cd-padded-device cd-center">
+            <div class="cd-body">
+              <div class="cd-camera"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen">
+                <img src="img/ipad.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <h2>Mac</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="cd-mac cd-fill-parent cd-padded-device">
+            <div class="cd-top"></div>
+            <div class="cd-bottom"></div>
+            <div class="cd-camera"></div>
+            <div class="cd-notch"></div>
+            <div class="cd-screen cd-smart-loader">
+              <img src="img/launchpad.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="cd-mac cd-pro cd-fill-parent cd-padded-device">
+            <div class="cd-top"></div>
+            <div class="cd-bottom"></div>
+            <div class="cd-camera"></div>
+            <div class="cd-notch"></div>
+            <div class="cd-screen cd-smart-loader">
+              <img src="img/macpro.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <h2>Watch</h2>
+      <div class="row">
+        <div class="col-sm-3 cd-xs-6">
+          <div class="cd-watch cd-fill-parent cd-padded-device">
+            <div class="cd-bracket"></div>
+            <div class="cd-top-band"></div>
+            <div class="cd-bottom-band"></div>
+            <div class="cd-body"></div>
+            <div class="cd-crown"></div>
+            <div class="cd-button"></div>
+            <div class="cd-screen cd-smart-loader">
+              <img src="img/watch1.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 cd-xs-6">
+          <div class="cd-watch cd-green-band cd-fill-parent cd-padded-device">
+            <div class="cd-bracket"></div>
+            <div class="cd-top-band"></div>
+            <div class="cd-bottom-band"></div>
+            <div class="cd-body"></div>
+            <div class="cd-crown"></div>
+            <div class="cd-button"></div>
+            <div class="cd-screen cd-smart-loader">
+              <img src="img/watch3.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 cd-xs-6">
+          <div class="cd-watch cd-red-band cd-gold cd-fill-parent cd-padded-device">
+            <div class="cd-bracket"></div>
+            <div class="cd-top-band"></div>
+            <div class="cd-bottom-band"></div>
+            <div class="cd-body"></div>
+            <div class="cd-crown"></div>
+            <div class="cd-button"></div>
+            <div class="cd-screen cd-smart-loader">
+              <img src="img/watch4.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 cd-xs-6">
+          <div class="cd-watch cd-linked-band cd-black cd-no-bracket cd-fill-parent cd-padded-device">
+            <div class="cd-bracket"></div>
+            <div class="cd-top-band"></div>
+            <div class="cd-bottom-band"></div>
+            <div class="cd-body"></div>
+            <div class="cd-crown"></div>
+            <div class="cd-button"></div>
+            <div class="cd-screen cd-smart-loader">
+              <img src="img/watch2.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <h2>Blueprint Theme</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="cd-ipad cd-scale-60 cd-padded-device cd-center cd-blueprint">
+            <div class="cd-body">
+              <div class="cd-camera"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen">
+                <img src="img/ipad.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="cd-iphone-6 cd-scale-60 cd-center cd-padded-device cd-blueprint">
+            <div class="cd-body">
+              <div class="cd-sound"></div>
+              <div class="cd-sleep"></div>
+              <div class="cd-camera"></div>
+              <div class="cd-ear"></div>
+              <div class="cd-home"></div>
+              <div class="cd-screen cd-smart-loader">
+                <img src="img/iphone6.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="cd-mac cd-fill-parent cd-pro cd-padded-device cd-blueprint">
+            <div class="cd-top"></div>
+            <div class="cd-bottom"></div>
+            <div class="cd-camera"></div>
+            <div class="cd-notch"></div>
+            <div class="cd-screen cd-smart-loader">
+              <img src="img/launchpad.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <footer>
+        <h3 class="c">This project is maintained by <a href="https://github.com/stuyam">Stuart Yamartino</a></h3>
+        <div class="center" style="margin-top: 20px;">
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="http://CSSDevices.io" data-size="large" data-via="StuYam" data-text="Check out all the awesome #CSSDevices on"></a>
+          <iframe style="margin-top: -1px;margin-left: 20px;float:right;" src="http://ghbtns.com/github-btn.html?user=stuyam&amp;repo=CSSDevices&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53374933-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/devices.js"></script>
+  </body>
+</html>

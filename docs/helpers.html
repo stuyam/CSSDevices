@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSSDevices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/devices.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="description" content="CSSDevices is a library of Apple devices built in pure CSS. They are robust and have an accompanying javascript package that allows easy slideshowing and image loading. Devices include iPhone 6, iPhone 6 Plus, iPhone 5s, iPhone 5c, iPad Air, MacBook Air, MacBook Pro, and all of the Apple Watches." />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'Yamartino/CSSDevices'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cssdevices-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">CSSDevices</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="cssdevices-nav">
+          <ul class="nav navbar-nav">
+            <li><a href="setup.html">Setup</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Devices <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="watch.html">Watch</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="helpers.html">Helpers</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="expo.html">Expo</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/stuyam/CSSDevices" target="new"><button type="button" class="btn btn-primary navbar-btn">Download on <strong>GitHub</strong></button></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container helpers">
+      <h1>Helpers</h1>
+      <h2>Sizing Helpers</h2>
+      There are 9 default sizing classes that can be added to the root class of the devices to scale it.
+      <br>
+      The number represents how much the device is scaled down based on it's original size. For example <span class="b">cd-scale-70</span> is 70% of the original device size.
+      <pre><code class="language-markup">cd-scale-10
+cd-scale-20
+cd-scale-30
+cd-scale-40
+cd-scale-50
+cd-scale-60
+cd-scale-70
+cd-scale-80
+cd-scale-90
+</code></pre>
+<hr>
+You can also set the font-size on the device with a percentage to scale the device to any size that you want.
+<br>
+This example scales the device size to <span class="b">65%</span> of its original size.
+<pre><code class="language-markup">&lt;div class="cd-iphone-6" style="font-size: 65%"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+<hr>
+<h2>Center Helper</h2>
+To center the device horizontally within its parent element, add the class cd-center.
+<pre><code class="language-markup">&lt;div class="cd-iphone-6 cd-center"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+<hr>
+<h2>Blueprint Helper</h2>
+This is a theme that gives every device the apperance of being a "blueprint". Use the class cd-blueprint to use it on any device.
+<pre><code class="language-markup">&lt;div class="cd-iphone-6 cd-blueprint"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+<hr>
+<h2>Landscape Helper</h2>
+<div class="alert alert-warning" role="alert"><span class="b">Heads Up!</span> Only for use with iPad or iPhone</div>
+<pre><code class="language-markup">&lt;div class="cd-iphone-6 cd-landscape-left"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+OR
+<pre><code class="language-markup">&lt;div class="cd-iphone-6 cd-landscape-right"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+<hr>
+By default, the screen does not rotate the image with the device, however if you want an element to be rotated on its side with the device add the class cd-landscape-fixed-screen.
+<pre><code class="language-markup">&lt;div class="cd-iphone-6 cd-landscape-right cd-landscape-fixed-screen"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+<hr>
+<h2>Scrolling Screen Helper</h2>
+Use the "cd-screen-scrolling" class in your screen to allow long images to scroll vertically in the device.
+<pre><code class="language-markup">&lt;div class="cd-iphone-6"&gt;
+  ...
+  &lt;div class="cd-screen cd-screen-scrolling"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<hr>
+<h2>Fill Screen Helper</h2>
+<div class="alert alert-info" role="alert"><span class="b">Neato!</span> The first version of CSSDevices used to have a cd-fill class to add to elements inside the cd-screen to make the element fill the screen completly. However in version 2.0 of CSSDevices, all children elements of cd-screen fill the screen by default!</div>
+      <hr>
+      <footer>
+        <h3 class="c">This project is maintained by <a href="https://github.com/stuyam">Stuart Yamartino</a></h3>
+        <div class="center" style="margin-top: 20px;">
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="http://CSSDevices.io" data-size="large" data-via="StuYam" data-text="Check out all the awesome #CSSDevices on"></a>
+          <iframe style="margin-top: -1px;margin-left: 20px;float:right;" src="http://ghbtns.com/github-btn.html?user=stuyam&amp;repo=CSSDevices&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53374933-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/devices.js"></script>
+  </body>
+</html>

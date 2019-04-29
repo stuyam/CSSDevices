@@ -1,0 +1,56 @@
+/*! CSSHelpers v1.0.1 | MIT license | Maintained by Stuart Yamartino | https://github.com/stuyam/CSSHelpers */
+/* Bold Text */
+.b{
+  font-weight: bold;
+}
+
+/* Italic Text */
+.i{
+  font-style: italic;
+}
+
+/* Strikethrough Text */
+.s{
+  text-decoration: line-through;
+}
+
+/* Underlined Text */
+.u{
+  text-decoration: underline;
+}
+
+/* Centered Text */
+.c{
+  width: 100%;
+  text-align: center;
+}
+
+/* Uppercase Text */
+.up{
+  text-transform: uppercase;
+}
+
+/* Lowercase Text */
+.low{
+  text-transform: lowercase;
+}
+
+/* Capitalize Text */
+.cap{
+  text-transform: capitalize;
+}
+
+/* Center Element */
+.center{
+  position: relative;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Clearfix floated elements */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

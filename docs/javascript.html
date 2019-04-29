@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSSDevices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/devices.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="description" content="CSSDevices is a library of Apple devices built in pure CSS. They are robust and have an accompanying javascript package that allows easy slideshowing and image loading. Devices include iPhone 6, iPhone 6 Plus, iPhone 5s, iPhone 5c, iPad Air, MacBook Air, MacBook Pro, and all of the Apple Watches." />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'Yamartino/CSSDevices'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cssdevices-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">CSSDevices</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="cssdevices-nav">
+          <ul class="nav navbar-nav">
+            <li><a href="setup.html">Setup</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Devices <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="watch.html">Watch</a></li>
+              </ul>
+            </li>
+            <li><a href="helpers.html">Helpers</a></li>
+            <li class="active"><a href="javascript.html">Javascript</a></li>
+            <li><a href="expo.html">Expo</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/stuyam/CSSDevices" target="new"><button type="button" class="btn btn-primary navbar-btn">Download on <strong>GitHub</strong></button></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container helpers">
+      <h1>Javascript</h1>
+      <div class="alert alert-warning">Make sure to check <a href="/setup.html">setup</a> on how to setup JS on your site</div>
+
+      <hr>
+      <h2>Smart Image Loader</h2>
+      <p>
+        Adding the class <span class="b">cd-smart-loader</span> to the <span class="i">cd-screen</span> element of your device, it will wait for the first element in the screen to finish loading and then fade it in. <span class="b">Note:</span> only built for &lt;img&gt; loading for now, untested with &lt;video&gt; and &lt;iframe&gt;. It fades in at 250 milliseconds by default.
+      </p>
+      <pre><code class="language-markup">...
+  &lt;div class="cd-screen cd-smart-loader"&gt;
+    &lt;img src="img/source.png"&gt;
+  &lt;/div&gt;
+...
+</code></pre>
+      <h3>Options:</h3>
+      <p>
+        You can specify the speed at which you want the element to fade in once it has loaded by adding the <span class="b">data-fade-in-speed</span> property to the <span class="i">cd-screen</span> element. <span class="b">Note:</span> The value is the time in milliseconds. The example below fades the image in over the course of 5 seconds.
+      </p>
+      <pre><code class="language-markup">...
+  &lt;div class="cd-screen cd-smart-loader" data-fade-in-speed="5000"&gt;
+    &lt;img src="img/source.png"&gt;
+  &lt;/div&gt;
+...
+</code></pre>
+
+      <hr>
+      <h2>Automatic Slideshow</h2>
+      <p>
+        The automatic slideshow will fade between the elements of the device automatically <span class="b">if</span> there are more than 1 elements in the <span class="i">cd-screen</span>. <span class="b">Tip:</span> You can fade between any elements as long as they are a child of the <span class="i">cd-screen</span>. It waits on each page for 5 seconds and fades between them for 1 second by default.
+      </p>
+      <pre><code class="language-markup">...
+  &lt;div class="cd-screen"&gt;
+    &lt;img src="img/source.png"&gt;
+    &lt;img src="img/source1.png"&gt;
+    &lt;img src="img/source2.png"&gt;
+    &lt;div&gt;This is text that is in the screen!&lt;/div&gt;
+  &lt;/div&gt;
+...
+</code></pre>
+      <h3>Options:</h3>
+      <p>
+        You can use a slider animation for your slideshow by giving the <span class="b">cd-screen</span> element the class <span class="b">cd-transition-slider</span>.
+      </p>
+      <pre><code class="language-markup">...
+  &lt;div class="cd-screen cd-transition-slider"&gt;
+    &lt;img src="img/source.png"&gt;
+    &lt;img src="img/source1.png"&gt;
+    &lt;img src="img/source2.png"&gt;
+    &lt;div&gt;This is text that is in the screen!&lt;/div&gt;
+  &lt;/div&gt;
+...
+</code></pre>
+      <p>
+        You can control the speed at which you want the element to fade and how long to stay on each element using the <span class="b">data-transition-speed</span> and <span class="b">data-pause-speed</span> properties to the <span class="i">cd-screen</span> element. <span class="b">Note:</span> The value is the time in milliseconds.
+      </p>
+      <pre><code class="language-markup">...
+  &lt;div class="cd-screen" data-pause-speed="3400" data-transition-speed="750"&gt;
+    &lt;img src="img/source.png"&gt;
+    &lt;img src="img/source1.png"&gt;
+    &lt;img src="img/source2.png"&gt;
+    &lt;div&gt;This is text that is in the screen!&lt;/div&gt;
+  &lt;/div&gt;
+...
+</code></pre>
+      <div class="alert alert-success">
+        If you have multiple elements in your screen and do NOT want them to automatically slideshow, you can add the class <span class="b">cd-no-slideshow</span> to the <span class="i">cd-screen</span> element.
+      </div>
+
+      <hr>
+      <h2>Device Fill Parent Element</h2>
+      <p>
+        By adding the class <span class="b">cd-fill-parent</span> to the top level element of your device, it will set the width of the element to the width of it's parent. This is GREAT for responsive websites. <span class="b">Hint:</span> Add the <span class="b">cd-padded-device</span> helper to this to keep a 20px margin around the device.
+      </p>
+      <pre><code class="language-markup">&lt;div class="cd-iphone-6 cd-fill-parent"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+      <div class="alert alert-warning">
+        <span class="b">Note!</span> The device fades in when using this to eleviate a different sized device to flash on the screen before the JS runs. You can use the <span class="b">data-fade-in-speed</span> property to adjust the 250 millisecond fade in.
+      </div>
+
+      <hr>
+      <h2>Device Fade In</h2>
+      <p>
+        By adding the class <span class="b">cd-device-loader</span> to the top level element of your device, it will fade in the device on page load. By default it fades in a 250 milliseconds.
+      </p>
+      <pre><code class="language-markup">&lt;div class="cd-iphone-6 cd-device-loader"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+      <h3>Options:</h3>
+      <p>
+        You can use the <span class="b">data-fade-in-speed</span> property to adjust the device fade in speed in milliseconds. The example fades the device in over the course of 2 seconds.
+      </p>
+      <pre><code class="language-markup">&lt;div class="cd-iphone-6 cd-device-loader" data-fade-in-speed="2000"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+
+      <hr>
+      <footer>
+        <h3 class="c">This project is maintained by <a href="https://github.com/stuyam">Stuart Yamartino</a></h3>
+        <div class="center" style="margin-top: 20px;">
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="http://CSSDevices.io" data-size="large" data-via="StuYam" data-text="Check out all the awesome #CSSDevices on"></a>
+          <iframe style="margin-top: -1px;margin-left: 20px;float:right;" src="http://ghbtns.com/github-btn.html?user=yamartino&amp;repo=CSSDevices&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53374933-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/devices.js"></script>
+  </body>
+</html>

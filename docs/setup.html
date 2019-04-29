@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSSDevices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/helpers.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/devices.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="description" content="CSSDevices is a library of Apple devices built in pure CSS. They are robust and have an accompanying javascript package that allows easy slideshowing and image loading. Devices include iPhone 6, iPhone 6 Plus, iPhone 5s, iPhone 5c, iPad Air, MacBook Air, MacBook Pro, and all of the Apple Watches." />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'Yamartino/CSSDevices'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cssdevices-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">CSSDevices</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="cssdevices-nav">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="setup.html">Setup</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Devices <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="iphone.html">iPhone</a></li>
+                <li><a href="ipad.html">iPad</a></li>
+                <li><a href="mac.html">Mac</a></li>
+                <li><a href="watch.html">Watch</a></li>
+              </ul>
+            </li>
+            <li><a href="helpers.html">Helpers</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="expo.html">Expo</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/stuyam/CSSDevices" target="new"><button type="button" class="btn btn-primary navbar-btn">Download on <strong>GitHub</strong></button></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Setup</h1>
+      <h4><span class="b">1.</span> Download <a target="new" href="https://github.com/stuyam/CSSDevices">CSSDevices</a></h4>
+      <h4 class="list"><span class="b">2.</span> Include CSSDevices in the &lt;head&gt; of your HTML file</h4>
+      <pre><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;</code>
+
+    <code class="highlight language-markup">&lt;link rel="stylesheet" href="devices.min.css" /&gt;</code><code class="language-markup">
+
+  &lt;/head&gt;
+...</code></pre>
+      <h4 class="list"><span class="b">3.</span> Copy and paste the HTML code from the device you want to use into your HTML</h4>
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+          Devices
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="iphone.html">iPhone</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="ipad.html">iPad</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="mac.html">Mac</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="watch.html">Watch</a></li>
+        </ul>
+      </div>
+      <h4 class="list"><span class="b">4.(optional)</span> Include the JS file (and required jQuery) into the bottom of your document if you want to use the JS functionality</h4>
+      <pre><code class="language-markup">...
+  &lt;body&gt;</code>
+
+    <code class="highlight language-markup">&lt;script src="https://code.jquery.com/jquery-2.1.3.min.js"&gt;&lt;/script&gt;</code>
+    <code class="highlight language-markup">&lt;script src="devices.js"&gt;&lt;/script&gt;</code><code class="language-markup">
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      <hr>
+      <footer>
+        <h3 class="c">This project is maintained by <a href="https://github.com/stuyam">Stuart Yamartino</a></h3>
+        <div class="center" style="margin-top: 20px;">
+          <a class="twitter-share-button" href="https://twitter.com/share" data-url="http://CSSDevices.io" data-size="large" data-via="StuYam" data-text="Check out all the awesome #CSSDevices on"></a>
+          <iframe style="margin-top: -1px;margin-left: 20px;float:right;" src="http://ghbtns.com/github-btn.html?user=yamartino&amp;repo=CSSDevices&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53374933-1', 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Twitter Button -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/devices.js"></script>
+  </body>
+</html>
